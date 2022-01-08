@@ -28,3 +28,13 @@ function germathrandom(){
 
 germathrandom()
 
+// Answer would be: [undefined, undefined, undefined]
+// While execution of if statement typeof num === "number" returns 'true' as all the number in array is a number([2,2,3]).
+// The map function will creates a new array and inserts the values returned from the function and here the function is not returning any value when if condition satisfy. So when a function didn't return a value then by default the function will return 'undefined'.
+// So, for all three elements the if block will came into picture and for every element if condition will be true, therefore for each element it will return undefined and prints [undefined, undefined, undefined]
+
+console.log( [1, 2, 3].map(num => {
+    if (typeof num === 'number') return;
+    return num * 2;
+    });
+    )
