@@ -1,17 +1,17 @@
-function multiply(x){
-    return function(y){
-        return x*y
+function multiply(x) {
+    return function (y) {
+        return x * y
     }
 }
- console.log(multiply(2)(3))
+console.log(multiply(2)(3))
 
- //parse int
+//parse int
 
- const num = parseInt('7*6', 10);
- 
- console.log(num)
+const num = parseInt('7*6', 10);
 
- //output = 7
+console.log(num)
+
+//output = 7
 
 // It parses the string and returns the first integer, hence num will have 7
 
@@ -22,7 +22,7 @@ function multiply(x){
 // Using <=, >= , < or >
 
 
-function germathrandom(){
+function germathrandom() {
     return Math.random() >= 0.5;
 }
 
@@ -33,8 +33,18 @@ germathrandom()
 // The map function will creates a new array and inserts the values returned from the function and here the function is not returning any value when if condition satisfy. So when a function didn't return a value then by default the function will return 'undefined'.
 // So, for all three elements the if block will came into picture and for every element if condition will be true, therefore for each element it will return undefined and prints [undefined, undefined, undefined]
 
-console.log( [1, 2, 3].map(num => {
+console.log([1, 2, 3].map(num => {
     if (typeof num === 'number') return;
     return num * 2;
-    });
+});
     )
+
+
+//     When we don't declare variables using var, le, or const then that variable has global scope it becomes member of window object i.e window.y : 10
+// so y can be accessed outside IIFE but x has function scope so we will get undefined when trying to use x outside IIFE.
+(() => {
+    let x = (y = 10);
+})();
+
+console.log(typeof x);
+console.log(typeof y);
