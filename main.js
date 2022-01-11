@@ -48,3 +48,18 @@ console.log([1, 2, 3].map(num => {
 
 console.log(typeof x);
 console.log(typeof y);
+
+
+//'date' is Date object
+
+function isWeekEnd(date){
+    return date.getDay() % 6 ===0;
+}
+
+isWeekEnd(new Date('1-15-2022')); // true - Satureday
+isWeekEnd(new Date('1-16-2022')); //true - Sunday
+isWeekEnd(new Date('1-17-2022')); // false - Monday
+
+
+
+
