@@ -60,6 +60,16 @@ isWeekEnd(new Date('1-15-2022')); // true - Satureday
 isWeekEnd(new Date('1-16-2022')); //true - Sunday
 isWeekEnd(new Date('1-17-2022')); // false - Monday
 
+//How to add conditional properties to an object - add property only if value is truthy:
+
+const details = { id:101, name : 'Nag', };
+const password = 'walter!@1998';
+const dudeWithPassword = {
+    ...details,
+    ...(password && {password}),
+};
+console.log(dudeWithPassword)
+
 
 
 
