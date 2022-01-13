@@ -71,5 +71,16 @@ const dudeWithPassword = {
 console.log(dudeWithPassword)
 
 
+//flapMap is mainly used to flatten the array when you have
+//nested arays.
+//But flapMap can also be used as a way to add and remove 
+//items (modify the number the number of items ) during a map
 
+const arr = [0, 4, 7]
+
+const doubled = arr.flatMap(num =>{
+    return num === 0 ? [] : [2* num];
+});
+
+console.log(doubled);
 
