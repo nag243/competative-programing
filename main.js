@@ -84,3 +84,15 @@ const doubled = arr.flatMap(num =>{
 
 console.log(doubled);
 
+// how do you check if a given property exists in object?
+
+const todo = {
+    title : 'friday',
+    description : 'post someting about Javascript'
+}
+
+ //output
+!!todo.createdDate
+false
+!!todo.title
+true
