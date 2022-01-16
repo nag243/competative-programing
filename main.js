@@ -111,3 +111,16 @@ console.log(a === b)
 console.log(b === c)
 
 
+
+//
+var person = Object.create({
+    name:"SG", 
+    height:"5.3"
+});
+delete person.height;
+
+console.log(person.height)
+
+//Output 
+//"5.3".Because height property on the prototype of the person object not on itself.so, deletion doesn't do anything
+
