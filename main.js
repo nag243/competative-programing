@@ -1,5 +1,5 @@
 function multiply(x) {
-    return function (y) {
+    return function(y) {
         return x * y
     }
 }
@@ -36,8 +36,7 @@ germathrandom()
 console.log([1, 2, 3].map(num => {
     if (typeof num === 'number') return;
     return num * 2;
-});
-    )
+});)
 
 
 //     When we don't declare variables using var, le, or const then that variable has global scope it becomes member of window object i.e window.y : 10
@@ -52,8 +51,8 @@ console.log(typeof y);
 
 //'date' is Date object
 
-function isWeekEnd(date){
-    return date.getDay() % 6 ===0;
+function isWeekEnd(date) {
+    return date.getDay() % 6 === 0;
 }
 
 isWeekEnd(new Date('1-15-2022')); // true - Satureday
@@ -62,11 +61,11 @@ isWeekEnd(new Date('1-17-2022')); // false - Monday
 
 //How to add conditional properties to an object - add property only if value is truthy:
 
-const details = { id:101, name : 'Nag', };
+const details = { id: 101, name: 'Nag', };
 const password = 'walter!@1998';
 const dudeWithPassword = {
     ...details,
-    ...(password && {password}),
+    ...(password && { password }),
 };
 console.log(dudeWithPassword)
 
@@ -78,8 +77,8 @@ console.log(dudeWithPassword)
 
 const arr = [0, 4, 7]
 
-const doubled = arr.flatMap(num =>{
-    return num === 0 ? [] : [2* num];
+const doubled = arr.flatMap(num => {
+    return num === 0 ? [] : [2 * num];
 });
 
 console.log(doubled);
@@ -87,14 +86,14 @@ console.log(doubled);
 // how do you check if a given property exists in object?
 
 const todo = {
-    title : 'friday',
-    description : 'post someting about Javascript'
+    title: 'friday',
+    description: 'post someting about Javascript'
 }
 
- //output
+//output
 !!todo.createdDate
 false
-!!todo.title
+    !!todo.title
 true
 
 
@@ -102,8 +101,8 @@ true
 // 'b' is an object, whereas 'a' and 'c' are of type number.
 // true, false, false
 
-let a  = 3
-let b  = new Number(3)
+let a = 3
+let b = new Number(3)
 let c = 3;
 
 console.log(a == b)
@@ -114,8 +113,8 @@ console.log(b === c)
 
 //
 var person = Object.create({
-    name:"SG", 
-    height:"5.3"
+    name: "SG",
+    height: "5.3"
 });
 delete person.height;
 
@@ -126,16 +125,10 @@ console.log(person.height)
 
 // the push operation returns the latest length of an array.
 
-function addToList(item, list){
+function addToList(item, list) {
     return list.push(item);
 }
-
 const result = addToList('apple', ['banana']);
-
 console.log(result)
-//output
+    //output
 2
-
-
-
-
