@@ -124,3 +124,18 @@ console.log(person.height)
 //Output 
 //"5.3".Because height property on the prototype of the person object not on itself.so, deletion doesn't do anything
 
+// the push operation returns the latest length of an array.
+
+function addToList(item, list){
+    return list.push(item);
+}
+
+const result = addToList('apple', ['banana']);
+
+console.log(result)
+//output
+2
+
+
+
+
