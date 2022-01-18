@@ -132,3 +132,21 @@ const result = addToList('apple', ['banana']);
 console.log(result)
     //output
 2
+
+//JavaScript tries to find a property called colors on the colorConfig object. 
+// There is no property called colors, so this returns undefined.
+//  Then, we try to access the value of the first element by using [1]. 
+// We cannot do this on a value that's undefined, so it throws a TypeError
+const colorConfig = {
+    red: true,
+    blue: false,
+    green: true,
+    black: true,
+    yellow: false,
+};
+
+const colors = ['pink', 'red', 'blue'];
+
+console.log(colorConfig.colors[1]);
+//output
+TypeError
