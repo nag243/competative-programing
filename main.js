@@ -150,3 +150,16 @@ const colors = ['pink', 'red', 'blue'];
 console.log(colorConfig.colors[1]);
 //output
 TypeError
+
+//user and userList holds the same reference value.
+// So, we did reassigned the user variable but still userList points to the same reference.
+//  Hence, array with user object is the answer.
+
+let user = { name: 'Nag Sai' };
+
+const userList = [user]
+user = null;
+console.log(userList)
+
+// output
+{ name: 'Nag Sai' }
