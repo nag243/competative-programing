@@ -163,3 +163,18 @@ console.log(userList)
 
 // output
 { name: 'Nag Sai' }
+
+// Inside random function, the variable declaration can be hoisted so x holds undefined.
+//  If we try to do post increment then we get NaN as it is not a number.
+
+var x = 23;
+(function() {
+    var x = 43;
+    (function random() {
+        x++;
+        console.log(x);
+        var x = 21;
+    })();
+})();
+//  Output
+NaN
