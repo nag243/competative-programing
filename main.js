@@ -178,3 +178,18 @@ var x = 23;
 })();
 //  Output
 NaN
+
+//JS quiz -3
+//Undefined because function doesn't returns anything 
+(function(){
+var animal = ['cow','horse'];
+animal.push('cat');
+animal.push('dog'rat''goat');
+console.log(animal.length);
+})();
+
+//Output 
+Undefined 
+
+
+
