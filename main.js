@@ -179,6 +179,7 @@ var x = 23;
 //  Output
 NaN
 
+<<<<<<< HEAD
 // Sorting won't work number with sort() method
 const numbers = [2, 55, 7];
 
@@ -188,3 +189,19 @@ console.log(numbers[2]);
 7
 // instead we can write custome callback to sort number
 numbers.sort((a, b) => a - b)
+=======
+//JS quiz -3
+//Undefined because function doesn't returns anything 
+(function(){
+var animal = ['cow','horse'];
+animal.push('cat');
+animal.push('dog'rat''goat');
+console.log(animal.length);
+})();
+
+//Output 
+Undefined 
+
+
+
+>>>>>>> 3d00e580bdbc4484dcb8d22a08845d1160ce7abc
