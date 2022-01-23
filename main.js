@@ -178,3 +178,13 @@ var x = 23;
 })();
 //  Output
 NaN
+
+// Sorting won't work number with sort() method
+const numbers = [2, 55, 7];
+
+numbers.sort();
+console.log(numbers[2]);
+// Output
+7
+// instead we can write custome callback to sort number
+numbers.sort((a, b) => a - b)
