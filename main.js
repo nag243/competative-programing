@@ -1,3 +1,12 @@
+// addition in Javascript 
+
+Number + Number - > addition
+Boolean + Number - > addition
+Boolean + Boolean - > addition
+Number + String - > concatenation
+String + Boolean - > concatenation
+
+// function curring 
 function multiply(x) {
     return function(y) {
         return x * y
