@@ -6,6 +6,19 @@ Boolean + Boolean - > addition
 Number + String - > concatenation
 String + Boolean - > concatenation
 
+//type obj is not iterable
+
+const obj = { 'Id': 'ABC123' };
+
+//while assigning arr to array of object[ ...obj] will through Typeerror due to obj is not iterable
+const arr = [...obj]
+
+console.log(arr)
+    //output
+TypeError
+
+
+
 // function curring 
 function multiply(x) {
     return function(y) {
@@ -45,7 +58,7 @@ germathrandom()
 console.log([1, 2, 3].map(num => {
     if (typeof num === 'number') return;
     return num * 2;
-});)
+}))
 
 
 //     When we don't declare variables using var, le, or const then that variable has global scope it becomes member of window object i.e window.y : 10
