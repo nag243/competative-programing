@@ -1,3 +1,40 @@
+// The postfix unary operator ++
+// 1) Return the value
+// 2) Increments the value
+
+// The prefix unary operator ++
+// 1) Increments the value
+// 2) Returns the value
+
+let number = 0
+console.log(number++)
+console.log(++number)
+console.log(number)
+
+
+// Output Would be: 0 2 2
+
+// When first-line gets executed then a variable number is assigned with a value of 0
+// At Line 2: number++ means to print the number then increment and assign back the update number so it would give output as 0
+
+// After execution of line 2 number variable will be updated with 1 as we used post-increment
+
+// At line 3: ++number means increment and update the value first, so number variable will become 2
+
+// and output of this line will be 2
+
+// At line 4: It will again print the same as there is no modification made to the number variable.
+
+// So, Final Output will be 0 2 2
+
+
+
+
+
+
+
+
+
 // addition in Javascript 
 
 Number + Number - > addition
