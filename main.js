@@ -1,3 +1,27 @@
+// JS Quiz - 4
+
+function myFun(x, y, ...manyMoreArgs) {
+    let sum = 0;
+    manyMoreArgs.forEach(value => {
+        sum += value
+    })
+    console.log(sum);
+}
+myFun(1, 2, 3, 4, 5);
+myFun(1, 2);
+
+// options A:12,0   B: 0,12  C:error  D:undefined
+
+// Output: 12,0
+// Reason: In first function call , it will assign first two values in x and y and rest of values in manyMoreArgs and will return 12 as sum.
+
+// In second function call, it will assign 1 and 2 in x and y and manyMoreArgs will be empty array so it will return 0 as sum.
+
+
+
+
+
+
 // The postfix unary operator ++
 // 1) Return the value
 // 2) Increments the value
