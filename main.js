@@ -1,3 +1,16 @@
+// JS Quiz -5
+const arr = [0, 1, 2, 3, 4, 5]
+const reverse = arr.reverse();
+console.log(reverse)
+
+// Ouput
+[5, 4, 3, 2, 1, 0]
+
+// Array.reverse() mutates the original array it was caled on in place.
+// This means that the original array was reversed and the variable array
+// was updated to point to this new reversed array. 
+
+
 // JS Quiz - 4
 
 function myFun(x, y, ...manyMoreArgs) {
