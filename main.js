@@ -1,3 +1,22 @@
+// JS Quiz -6
+
+(function() {
+    var array1 = [];
+    var array2 = new Array(100);
+    var array3 = new Array(['1', 2, '3', 4, 5.6]);
+    console.log(array1);
+    console.log(array2);
+    console.log(array3);
+    console.log(array3.length);
+}());
+
+// Output
+// []
+// (100) [empty × 100]
+// [Array(5)]
+// 1
+
+
 // JS Quiz -5
 const arr = [0, 1, 2, 3, 4, 5]
 const reverse = arr.reverse();
