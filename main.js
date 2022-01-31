@@ -1,3 +1,19 @@
+// JS Quiz  -7
+function num(a, b, a) {
+    console.log(a, b, a)
+}
+num(1, 2, 3);
+//output : 3,2,3
+// The answer would be 3,2,3, the reason is the first value of a is set to 1 and b to 2 
+// but at last value of a is reassigned to 3, 
+// so it will console, 3,2,3 as the final value as the corresponding value of a,b, a.
+
+
+
+
+
+
+
 // JS Quiz -6
 
 (function() {
