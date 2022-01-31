@@ -8,7 +8,12 @@ num(1, 2, 3);
 // but at last value of a is reassigned to 3, 
 // so it will console, 3,2,3 as the final value as the corresponding value of a,b, a.
 
+//with arrow function it workd differently 
+const num2 = (a, b, a) => {
+    console.log(a, b, a)
+}
 
+// Output: Syntax error
 
 
 
