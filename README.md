@@ -15,6 +15,28 @@ a.toString()===b.toString();,
 let isArraysEqual=((a, b)=>
    !! a && !!b && a.length===b.length && a.every((ele,i) =>  b[i]=== ele));
 
+JS Quiz -2
+
+if([0]){
+   console.log("true")
+  }
+  else{
+   console.log("false")
+  }
+
+
+  if(0){
+   console.log('true')
+  }
+  else{
+   console.log('false')
+  }
+
+  <!-- Output:true, false -->
+
+<!-- Since first one is array and 0 is an element in it so it will return true. But for the second one 0 will fall into falsy value so it will return false. -->
+
+
    
 
 
