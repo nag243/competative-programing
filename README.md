@@ -43,6 +43,21 @@ console.log([1,2] + [3,4])
 <!-- it will be 1,23,4 due to JavaScript's type conversion since we can't directly add two arrays unless we are referring to its elements. what we are doing is [1,2].toString() + [3,4].toString() it becomes a total string "1,2"+"3,4" = 1,23,4 -->
 Output:1,23,4
 
+<!-- How to Empty an array -->
+
+arrayList.length = 0;
+
+arrayList =[];
+
+arrayList = [1,2,3,4,5];
+
+arrayList.splice(0, arrayList.lenth);
+
+while(arrayList.lenght) {
+  arrayList.pop();
+}
+
+
 
 
 
