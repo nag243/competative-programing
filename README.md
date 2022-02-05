@@ -57,6 +57,15 @@ while(arrayList.lenght) {
   arrayList.pop();
 }
 
+<!-- JS Quiz - 5 -->
+
+console.log(typeof null)
+
+console.log(typeof undefined)
+
+<!-- Output:  -->
+Object
+undefined
 
 
 
