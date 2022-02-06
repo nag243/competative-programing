@@ -67,6 +67,25 @@ console.log(typeof undefined)
 Object
 undefined
 
+<!-- In JavaScript, While logging multiple variables, keeping track of individual variables can become difficult. Either we have to write them with different console.log() or give them specific strings.
+
+Using object literal comes in handy here -->
+
+let a  =10;
+let b = 20;
+
+console.log(a,"a");
+10 'a'
+
+console.log(b,"b")
+20 'b'
+
+let a =10;
+let b = 20;
+// using object literal 
+console.log({a}, {b} );
+{a: 10} {b: 20}
+
 
 
 
