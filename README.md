@@ -102,6 +102,13 @@ console.log(a[b]);
 
 
 
+<!--The var keyword, this value was ***global***. During the loop, we incremented the value of i by 1 each time, using the unary operator ++. By the time the setTimeout callback function was invoked, i was equal to 3 in the first example  -->
+
+for(var i = 0; i < 3; i++) setTimeout(()=>console.log(i),1);
+for(let i = 0; i < 3; i++) setTimeout(()=>console.log(i),1);
+
+<!-- 3,3,3  and 0,1,2 -->
+
 
 
 
