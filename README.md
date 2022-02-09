@@ -109,6 +109,17 @@ for(let i = 0; i < 3; i++) setTimeout(()=>console.log(i),1);
 
 <!-- 3,3,3  and 0,1,2 -->
 
+<!-- JS quiz -7 -->
+<!-- As the inner function with callback is immediately invoked, so the returned value(0) from the callback will be the final answer. -->
+
+function sayHi() {
+return (() => 0)();
+}
+console.log(typeof sayHi());
+
+Output: number
+
+
 
 
 
