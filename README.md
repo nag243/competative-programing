@@ -119,7 +119,16 @@ console.log(typeof sayHi());
 
 Output: number
 
+<!-- JS Quiz - 8 -->
+String.prototype.printData = () => {
+ return 'Printing data';
+};
 
+const data = 'Instagram';
+
+data.printData();
+
+Output:Printing data
 
 
 
