@@ -130,7 +130,16 @@ data.printData();
 
 Output:Printing data
 
+<!-- JS Quiz - 9 -->
 
+const props = [
+  {age:23, name:'abreh'},
+  {age:27, name:'Yonas'},
+  {age:25, name:'sara'}
+];
+const [, {name},]=props;
+console.log(name)
 
+Ouput:Yonas
 
 
