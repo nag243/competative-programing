@@ -143,3 +143,15 @@ console.log(name)
 Ouput:Yonas
 
 
+<!--  Js Quiz - 10 -->
+
+const dynamic = 'flavor';
+var item = {
+    name:'Biscuit',
+    [dynamic]: 'Chocolate'
+}
+
+console.log(item)
+Output: {name: 'Biscuit', flavor: 'Chocolate'}
+
+
