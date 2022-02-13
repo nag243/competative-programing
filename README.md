@@ -155,3 +155,17 @@ console.log(item)
 Output: {name: 'Biscuit', flavor: 'Chocolate'}
 
 
+<!-- JS Quiz - 11 -->
+
+<!-- The string is a value type, so calling .toUpperCase() returns an uppercased version of the original value, but won’t mutate the original value in memory like we can for reference types. -->
+
+let myString = "hello world"
+myString.toUpperCase()
+console.log(myString.split(" "))
+
+Output: ['hello', 'world']
+
+
+
+
+
