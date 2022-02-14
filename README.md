@@ -165,6 +165,19 @@ console.log(myString.split(" "))
 
 Output: ['hello', 'world']
 
+<!-- JS Quiz - 12 -->
+
+<!-- In JavaScript object is a reference type so we can easily modified value -->
+
+const USER = {
+    'Name': 'Nag',
+    'age': 25
+};
+USER.age = 27;
+console.log(USER.age)
+
+Output: 27
+
 
 
 
