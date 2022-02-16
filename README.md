@@ -189,7 +189,12 @@ Output:
 43
 1
 
+<!-- Shuffle Array JS quiz - 14 -->
 
+let arr = [5, 24, 120, -23, 4, 5, -34, 98]
+const shuffleArray = (arr) => arr.sort(() =>Math.random() - 0.5);
+console.log(shuffleArray(arr));
+Output: [-23, 5, 4, 98, 5, 24, -34, 120]
 
 
 
