@@ -196,5 +196,12 @@ const shuffleArray = (arr) => arr.sort(() =>Math.random() - 0.5);
 console.log(shuffleArray(arr));
 Output: [-23, 5, 4, 98, 5, 24, -34, 120]
 
+<!-- JS quiz -15 -->
 
+for(let i = 0; i<4; i++){
+    if(i==2)
+        continue
+    console.log(i)
+}
 
+Output: 0,1,3
