@@ -205,3 +205,18 @@ for(let i = 0; i<4; i++){
 }
 
 Output: 0,1,3
+
+
+<!--  JS quiz - 16-->
+
+const myMoney = {
+    quarters:4,
+    dimes: 10,
+    nickels:20,
+    pennies: 100
+}
+for(const coin of myMoney){
+    console.log(`${coin} : ${myMoney[coin]}`);
+}
+
+Output: myMoney is not iterable 
