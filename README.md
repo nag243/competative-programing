@@ -234,3 +234,15 @@ for (let i = 0; i<3; i++){
 }
 
 Output:333, 013
+
+<!-- Check if variable is object or not -->
+function isObject(obj) {
+    return obj != null && obj.constructor.name === "Object"
+}
+
+console.log(isObject({}))
+Output: true
+console.log(isObject([]))
+Output: false
+console.log(isObject(null))
+Output: false
