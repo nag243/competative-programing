@@ -246,3 +246,17 @@ console.log(isObject([]))
 Output: false
 console.log(isObject(null))
 Output: false
+
+
+<!-- JSquiz - 18 -->
+
+console.log(0 || 1);
+console.log(1 || 2);
+console.log(0 && 1);
+console.log(1 && 2);
+
+Output:
+1
+1
+0
+2
