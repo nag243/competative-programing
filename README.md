@@ -273,3 +273,9 @@ Output:
 })(21)
 
 Output: 21
+
+<!-- Check if the word is palindrome  -->
+
+let word = 'madam'
+word === word.split('').reverse().join('')
+Output : true
