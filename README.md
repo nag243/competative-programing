@@ -279,3 +279,11 @@ Output: 21
 let word = 'madam'
 word === word.split('').reverse().join('')
 Output : true
+
+<!-- JS quiz - 20 -->
+let y =1;
+
+y = typeof x; // undefined 
+console.log(typeof y)
+string
+
