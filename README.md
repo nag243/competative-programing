@@ -287,3 +287,12 @@ y = typeof x; // undefined
 console.log(typeof y)
 string
 
+<!-- Better way to filter false values without using if statements.. !  -->
+
+const values = ['web', '', 'undefined', 'javascript', null, false]
+
+values.filter((value) => Boolean(value))
+
+values.filter(Boolean) //short hand sytax
+
+Output :['web', 'undefined', 'javascript']
