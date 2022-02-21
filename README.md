@@ -248,7 +248,7 @@ console.log(isObject(null))
 Output: false
 
 
-<!-- JSquiz - 18 -->
+<!-- JS quiz - 18 -->
 
 console.log(0 || 1);
 console.log(1 || 2);
@@ -260,3 +260,16 @@ Output:
 1
 0
 2
+
+
+<!-- JS quiz - 19 -->
+<!-- The return function acts as a closure which contains a as 21 from the outer function -->
+
+(function (a) {
+    return (function () {
+        console.log(a)
+        a=6;
+    })()
+})(21)
+
+Output: 21
