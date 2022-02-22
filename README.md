@@ -296,3 +296,19 @@ values.filter((value) => Boolean(value))
 values.filter(Boolean) //short hand sytax
 
 Output :['web', 'undefined', 'javascript']
+
+<!-- This is how you can find an object in an array of objects.
+ -->
+
+const users = [
+    {id:1, name:"John"},
+    {id:2, name:"Wick"},
+    {id:3, name:"Kim"}
+]
+
+const user = users.find(user => user.name ==="Kim");
+
+console.log(user)
+Output:
+{id: 3, name: 'Kim'}
+
