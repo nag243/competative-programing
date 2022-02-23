@@ -350,3 +350,28 @@ Output:
     }
 
 
+
+<!--  JS quiz - 22 -->
+
+<!-- why even after calling the 'doFoo' function with 'obj' as context, the foo function prints the global 'a' and not the 'a' inside 'obj' ? -->
+
+<!-- doFoo(obj.foo)
+
+we tend to think that the 'foo' will get the this reference equal to obj. Although, the subtle difference here is that 'foo' is "passed around" and not "invoked". Only when we invoke it, the 'this' reference is assigned. So the function will still have the global this reference or the global/window object. -->
+function foo (){
+    console.log(this.a)
+}
+
+var obj = {
+    a:”in obj”,
+    foo:foo
+}
+
+var a = ‘outside obj’
+
+function doFoo(fn){
+    fn()
+}
+
+doFoo(obj.foo) // outside obj
+doFoo.call(obj, obj.foo) // outside obj
