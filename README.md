@@ -312,3 +312,20 @@ console.log(user)
 Output:
 {id: 3, name: 'Kim'}
 
+
+<!-- Object.freeze() method  -->
+
+let person = {
+    name: 'leonardo'
+};
+
+let animal = {
+    species: 'snake'
+};
+
+Object.freeze(person);
+person.name = "Leema"
+console.log(person)
+
+Output:
+{name: 'leonardo'}
