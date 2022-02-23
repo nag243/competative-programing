@@ -329,3 +329,24 @@ console.log(person)
 
 Output:
 {name: 'leonardo'}
+
+<!-- JS quiz - 21  -->
+
+const testThis = {
+    property: "foo",
+    logProp: function() {
+        const logProp = "bar"
+        console.log(this.logProp)
+    }
+}
+
+testThis.logProp()
+
+Output:
+
+ƒ () {
+        const logProp = "bar"
+        console.log(this.logProp)
+    }
+
+
