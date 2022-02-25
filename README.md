@@ -405,4 +405,20 @@ const person = {
     ...(isTruthy && {alias: "Iron Man" })
 }
 
+<!-- JS quiz- 25 -->
 
+<!-- 3 easiest ways to convert an object into an array 🎉 -->
+const obj = {
+    one:1,
+    two:2,
+    three:3,
+};
+
+Object.entries(obj);
+Output:[Array(2), Array(2), Array(2)]
+
+Object.keys(obj)
+Output:['one', 'two', 'three']
+
+Object.values(objct)
+Output:[1, 2, 3]
