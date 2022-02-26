@@ -464,4 +464,16 @@ console.log(foo.baz + foo.bar + bar);
 Output:
 NaN
 
+<!-- JS quiz - 29 -->
+
+<!-- Math.min() will give positive infinity and Math.max() will give -Inifinity .
+so answer is false,true ;
+Now , why min operation gives positie Infinity when no parameter is there, because :
+when you pass a number in min operation Math.min(2) so it will give 2 ,by comparing the parameter that is 2 ,with the largest value possible , so comparison takes place like 2<Infinity and returns 2 as the answer, so min operation compare with +Infinity and max oprtation with negative Infinity -->
+
+console.log(Math.min() < Math.max());
+console.log(Math.min() > Math.max());
+
+Output:
+false, true
 
