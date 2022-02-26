@@ -434,4 +434,17 @@ let stepTwo = stepOne.reduce((a,b) => {
 console.log(stepTwowo)
 Output: 10
 
+<!--  JS quiz - 27-->
+<!-- Did you know that you can pass the Number constructor as an argument directly to the array methods?
+
+For example, we can use it to easily convert a list of strings into their numerical values 👇 -->
+
+const stringNumbers = ['123', '4.45', 'abc', '1000','0', ''];
+
+const numbers = stringNumbers.map(Number)
+console.log(numbers)
+
+ Output:
+[123, 4.45, NaN, 1000, 0, 0]
+
 
