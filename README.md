@@ -422,3 +422,16 @@ Output:['one', 'two', 'three']
 
 Object.values(objct)
 Output:[1, 2, 3]
+
+<!-- JS quiz- 26  -->
+
+let numbers = "01234"
+let stepOne = numbers.split("")
+let stepTwo = stepOne.reduce((a,b) => {
+    return parseInt(a) + parseInt(b)
+})
+
+console.log(stepTwowo)
+Output: 10
+
+
