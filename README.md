@@ -448,3 +448,20 @@ console.log(numbers)
 [123, 4.45, NaN, 1000, 0, 0]
 
 
+<!-- JS quiz -28 -->
+var bar = 1;
+
+var bar = 1,
+    foo = {}
+
+foo: {
+    bar:2;
+   baz:++bar;
+}
+
+console.log(foo.baz + foo.bar + bar);
+
+Output:
+NaN
+
+
