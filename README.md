@@ -477,3 +477,13 @@ console.log(Math.min() > Math.max());
 Output:
 false, true
 
+<!-- JS quiz -30 -->
+
+<!-- The prototype of an Array is indeed an Array. unlike other prototypes which tend to objects -->
+
+console.log(Array.isArray(Array.prototype));
+
+Output: true
+
+
+
