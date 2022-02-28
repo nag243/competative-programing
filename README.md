@@ -485,5 +485,13 @@ console.log(Array.isArray(Array.prototype));
 
 Output: true
 
+<!--  JS quiz -31-->
+
+var a= "Hello"
+var b =+a;
+
+console.log(typeof a, typeof b, b);
+Output: string number NaN
+
 
 
