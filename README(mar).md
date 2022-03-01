@@ -27,3 +27,25 @@ for(let i =0; i<5; i++) {
 10
 console.log(result)
 10
+
+<!-- JS Quiz -4  -->
+
+<!-- The keyword "in" returns the object keys and the keyword "of" returns the object values.-->
+<!-- Actually should say "for (let prop)" , otherwise it won't recognize prop or any other iterator name.
+
+With this change, it will log the properties (3rd answer).
+
+bedrooms
+bathrooms
+sqft
+
+To log the result like first one we should say:
+
+for (let prop in house) {console.log(`${prop}: ${house[prop]}`)} -->
+const house = {
+bedrooms: 2,
+bathrooms: 1,
+sqft: 1234
+}
+
+for (prop in house) {console.log(prop)}
