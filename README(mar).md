@@ -18,3 +18,12 @@ function fn() {
 
 fn()
 10
+
+<!-- JS Quiz -3  -->
+let result = 0;
+for(let i =0; i<5; i++) {
+    result+= i;
+}
+10
+console.log(result)
+10
