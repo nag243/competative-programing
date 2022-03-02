@@ -64,3 +64,17 @@ console.log(entries.length)
 console.log(entries)
 Output:
 [1, 2, 3, 4]
+
+<!-- JS quiz -6 -->
+
+var a = 42;
+
+var b = a++
+
+b= (a ++, a)
+44
+
+console.log(a)
+44
+console.log(b)
+44
