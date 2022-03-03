@@ -102,3 +102,9 @@ age + 54
 //NaN
 console.log(age)
 undefined
+
+<!-- JS quiz -8 -->
+let myArray = [0,1,2,3,4]
+myArray.forEach(num => console.log(num %2))
+Output:
+0,1, 0,1,0
