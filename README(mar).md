@@ -78,3 +78,27 @@ console.log(a)
 44
 console.log(b)
 44
+
+<!-- JS quiz - 7 -->
+
+<!-- const Human = (name) =>({
+    name:name,
+})
+
+const Student = (name) = ({
+    ...Human(name),
+    sayHello() {
+        return `hello i'm ${this.name}`
+    }
+})
+
+Student("Nag").sayHello() -->
+
+<!-- JS quiz - 7 -->
+
+var age;
+
+age + 54
+//NaN
+console.log(age)
+undefined
