@@ -108,3 +108,14 @@ let myArray = [0,1,2,3,4]
 myArray.forEach(num => console.log(num %2))
 Output:
 0,1, 0,1,0
+
+<!-- JS quiz - 9 -->
+const myBook = {
+    title:"The Giver",
+    author:"Lois Lowry",
+}
+
+myBook.pages = 226
+
+console.log(myBook)
+Output:{title: 'The Giver', author: 'Lois Lowry', pages: 226}
