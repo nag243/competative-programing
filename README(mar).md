@@ -137,4 +137,20 @@ for(i = 4; i<8; ++i) {
 
 Output:3
 
+<!-- JS quiz - 12 -->
+
+let person = {
+    name: 'leonardo'
+};
+
+let animal = {
+    species: 'snake'
+};
+
+Object.freeze(person);
+person.name = "Leema"
+console.log(person)
+
+Output: {name: 'leonardo'}
+
 
