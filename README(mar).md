@@ -124,3 +124,17 @@ Output:{title: 'The Giver', author: 'Lois Lowry', pages: 226}
 
 console.log(0, 01, 010, 021)
 Output: 0 1 8 17(Numbers starting with 0 are read as octals. )
+
+<!-- JS quiz - 11 -->
+
+var sum = 0;
+for(i = 4; i<8; ++i) {
+    if(i==6) {
+        continue
+    }
+    sum+=1
+}
+
+Output:3
+
+
