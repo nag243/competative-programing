@@ -153,4 +153,15 @@ console.log(person)
 
 Output: {name: 'leonardo'}
 
+<!-- JS quiz - 13 -->
+
+var str = "potato potato";
+console.log(str.replace(/pot/, "tom"));
+Output: "tomato potato"
+we can't replace all the occurrenes
+by adding /g at the end of the regex.
+
+console.log(str.replace(/plot/g, "tom"));
+Output:"tomato tomato
+
 
