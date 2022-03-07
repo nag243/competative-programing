@@ -164,4 +164,20 @@ by adding /g at the end of the regex.
 console.log(str.replace(/plot/g, "tom"));
 Output:"tomato tomato
 
+<!-- JS quiz - 14 -->
+
+let dummyObj = {
+    price: 4502,
+    get_price: function () {
+        return this.price;
+    }
+}
+
+let realobj = Object.create(dummyObj)
+realobj.price = 3000;
+
+delete realobj.price;
+console.log(realobj.get_price());
+
+Output: 4502
 
