@@ -181,3 +181,15 @@ console.log(realobj.get_price());
 
 Output: 4502
 
+<!-- JS quiz - 15 -->
+
+console.log("a" + "b")
+ab
+
+console.log("a" & "b")
+0
+
+console.log("a" && "b")
+b
+
+
