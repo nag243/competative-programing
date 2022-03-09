@@ -192,4 +192,19 @@ console.log("a" & "b")
 console.log("a" && "b")
 b
 
+<!-- JS quiz - 16 -->
+
+const array = [
+    {id:1,name:"javascript", type:"language"},
+    {id:2,name:"Angular", type:"Framework"}
+    {id:3name:"NGRX", type:"State Management "}
+]
+<!-- old way -->
+
+array.map((data) = console.log(data.name, data.type))
+
+<!-- new way -->
+
+array.map(({name, type}) => console.log(name, type))
+
 
