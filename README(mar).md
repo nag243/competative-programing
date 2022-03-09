@@ -207,4 +207,24 @@ array.map((data) = console.log(data.name, data.type))
 
 array.map(({name, type}) => console.log(name, type))
 
+<!-- JS quiz -17 -->
+
+function foo1() 
+{
+    return {
+        bar:"hello"
+    };
+}
+
+function foo2() 
+{
+    return 
+    {
+        bar:"qasim"
+    }
+}
+
+The first function will return the object itself where as the second function will return undefined.
+
+Reason: ASI rule
 
