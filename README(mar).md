@@ -228,3 +228,24 @@ The first function will return the object itself where as the second function wi
 
 Reason: ASI rule
 
+<!-- JS quiz - 18 -->
+
+let zero = Number (0);
+
+let one = new Number(1);
+
+if(zero) {
+    console.log("zero True");
+} else {
+    console.log("zero False");
+}
+Output:zero False
+
+if(one) {
+    console.log("One True");
+} else {
+    console.log("One False");
+}
+One True
+
+
