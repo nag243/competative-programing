@@ -249,3 +249,15 @@ if(one) {
 One True
 
 
+<!-- JS quiz - 19  -->
+
+console.log(Math.max([1,2,3]))
+NaN
+
+console.log(Math.max.apply(null, [1,2,3]))
+3
+
+<!-- Reason - Math.max() accepts zero or more number as parameters. Then it return the max out of it.
+But in first case, we are trying to find the max out of an array. So it console it as NaN(not a number).
+In second case, we are calling max() with the help of apply(). apply() accepts an array and it applies the array as parameters to the actual function. So it behave as spreading array as parameters to max() that's why it is returning 3 as max element. -->
+
