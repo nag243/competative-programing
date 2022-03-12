@@ -261,3 +261,28 @@ console.log(Math.max.apply(null, [1,2,3]))
 But in first case, we are trying to find the max out of an array. So it console it as NaN(not a number).
 In second case, we are calling max() with the help of apply(). apply() accepts an array and it applies the array as parameters to the actual function. So it behave as spreading array as parameters to max() that's why it is returning 3 as max element. -->
 
+<!-- JS quiz -20 -->
+var a = 1;
+
+(function () {
+    console.log(a);
+    var a =2;
+    console.log(a);
+})()
+Output:
+undefined
+2
+
+var a = 1;
+
+(function () {
+    console.log(a);
+    a =2;
+    console.log(a);
+})()
+Output:
+1
+2
+
+
+
