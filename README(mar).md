@@ -284,5 +284,13 @@ Output:
 1
 2
 
+<!--JS quiz -21  -->
+<!-- Using fill method , we can add  value based on the start and ending index numbers
+ array.fill(value, start, end) -->
 
+var numArr = [1,2,3,4];
+
+numArr.fill(5,0,1);
+console.log(numArr)
+(4) [5, 2, 3, 4]
 
