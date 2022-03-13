@@ -294,3 +294,13 @@ numArr.fill(5,0,1);
 console.log(numArr)
 (4) [5, 2, 3, 4]
 
+<!-- JS quiz -22 -->
+
+const items = ["item", "item2","item3", "item4","item5"]
+
+const [,,...restItems] = items
+
+console.log(restItems)
+['item3', 'item4', 'item5']
+
+
