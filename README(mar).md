@@ -320,4 +320,27 @@ Output:
   "salary": 5000
 }
 
+<!--  JS quiz - 24 -->
+Method-1 :Not good because reverse() mutates the original array
 
+const names = ['alen', 'walker', 'Charlie']
+
+const reversed = names.reverse()
+
+console.log(names)
+['Charlie', 'walker', 'alen']
+
+console.log(reversed)
+['Charlie', 'walker', 'alen']
+
+Method: Using spread operator
+
+const names = ['alen', 'walker', 'Charlie']
+
+const reversed = [...names].reverse()
+
+console.log(names)
+['alen', 'walker', 'Charlie']
+
+console.log(reversed)
+ ['Charlie', 'walker', 'alen']
