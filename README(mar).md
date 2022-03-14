@@ -303,4 +303,21 @@ const [,,...restItems] = items
 console.log(restItems)
 ['item3', 'item4', 'item5']
 
+<!-- JS quiz - 23 -->
+const employee = {
+    id: 1,
+    name:"jhon",
+    salary:5000
+}
+
+const format = JSON.stringify(employee, null, 2)
+
+console.log(format)
+Output:
+{
+  "id": 1,
+  "name": "jhon",
+  "salary": 5000
+}
+
 
