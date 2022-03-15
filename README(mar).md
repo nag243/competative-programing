@@ -344,3 +344,13 @@ console.log(names)
 
 console.log(reversed)
  ['Charlie', 'walker', 'alen']
+
+<!-- JS quiz - 25 -->
+
+const printName =(name:string):voide=>{
+    console.log(name)}
+}
+console.log(printName('Nag'))
+
+Output:
+Nag, Undefined
