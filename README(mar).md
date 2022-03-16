@@ -354,3 +354,22 @@ console.log(printName('Nag'))
 
 Output:
 Nag, Undefined
+
+<!-- JS quiz - 26 -->
+<!-- Using 𝗱𝗲𝘀𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗶𝗻𝗴 you can easily extract the information from the object.
+
+This helps a lot when you want to get specific keys from the data you have obtained from the API. -->
+
+const person = {
+    name:'Nag',
+    age:25,
+    friends: ['Stackoveflow', 'Youtube', 'Udemy','Medium Blogs']
+};
+
+const {name , friends }  = person;
+
+console.log(name)
+Output: Nag
+
+console.log(friends)
+Output: ['Stackoveflow', 'Youtube', 'Udemy', 'Medium Blogs']
