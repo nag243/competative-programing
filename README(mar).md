@@ -373,3 +373,11 @@ Output: Nag
 
 console.log(friends)
 Output: ['Stackoveflow', 'Youtube', 'Udemy', 'Medium Blogs']
+
+<!-- JS quiz - 27 -->
+
+console.log( 10 < 20 < 30);
+true
+
+console.log(30 > 20 > 10)
+false
