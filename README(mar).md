@@ -381,3 +381,27 @@ true
 
 console.log(30 > 20 > 10)
 false
+
+
+<!-- JS quiz - 28 -->
+<!-- How to VALIDATE an empty string in Javascript?-->
+
+const isEmpty  = (string) => {
+    if(string.trim() === '') return true;
+    else return false
+};
+
+<!-- shorthand -->
+const isEmpty  = (string) => {
+    return string.trim() ===''
+};
+
+const username = ""
+const age = "23"
+
+console.log(isEmpty(username))
+Output:true
+
+console.log(isEmpty(age))
+Output:false
+
