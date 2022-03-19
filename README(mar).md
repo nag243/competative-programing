@@ -405,3 +405,14 @@ Output:true
 console.log(isEmpty(age))
 Output:false
 
+<!-- JS quiz - 29 -->
+<!-- You can use the String.prototype.repeat() method to create a string consisting of a repeated sequence of another string.
+ -->
+
+const sentence = "and over";
+
+const output = `Repeat it over $(sentence.repeat(4)}again.`;
+
+<!-- Repeat it over and over and over and over and over again -->
+
+
