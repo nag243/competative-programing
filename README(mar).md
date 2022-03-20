@@ -415,4 +415,18 @@ const output = `Repeat it over $(sentence.repeat(4)}again.`;
 
 <!-- Repeat it over and over and over and over and over again -->
 
+<!-- JS quiz - 30  -->
+<!-- a object is reference type vale that is stored in a heap and the variable acts as pointer to the same value stored in that heap , so if one variable trys to change that stored value it will be changed for all pointers.
 
+Just like five persons pointing towards an real life object so when object change , it will be changed for all. -->
+
+let c= { greeting:'Hey!' };
+
+let d;
+
+d= c;
+{greeting: 'Hey!'}
+c.greeting = 'Hello';
+'Hello'
+console.log(d.greeting)
+Hello
