@@ -442,3 +442,30 @@ const numbers = [1,2,3];
 
 console.log(calculateSum(...numbers))
 6
+
+<!-- JS quiz - 32 -->
+<!-- 𝐎𝐛𝐣𝐞𝐜𝐭.𝐢𝐬() - A good solution for the looseness of equality comparisons in javascript  -->
+<!-- the Object.is() method determines whether two values are the same value. the Object.is() behaves like === operator except it's behaviour with signes zeros and NaN -->
+
+console.log(NaN === NaN)
+false
+
+console.log(Object.is(NaN, NaN))
+true
+
+console.log( +0 === -0)
+true
+
+console.log(Object.is(+0, -0))
+false
+
+console.log(-0 === 0)
+true
+
+console.log(Object.is(-0, 0))
+VM6150:1 false
+
+
+
+
+
