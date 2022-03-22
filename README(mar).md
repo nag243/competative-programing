@@ -465,7 +465,19 @@ true
 console.log(Object.is(-0, 0))
 VM6150:1 false
 
+<!-- JS quiz - 33  -->
 
+const props = [ 
+    {name:'Vicky', age:24},
+    {name:'Sai', age : 22},
+    {name: 'Ram', age : 26},
+    ]
+
+const [, {name},] = props 
+<!-- In shorthand and for readability -->
+const {name} = props[1]
+console.log(name)
+Output: Sai
 
 
 
