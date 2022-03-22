@@ -479,5 +479,16 @@ const {name} = props[1]
 console.log(name)
 Output: Sai
 
+<!-- Js quiz - 34 -->
+
+const user = {
+    firstName:'Nag',
+    lastName:'Sai',
+    private:true
+}
+const { private, ...updateUser} = user
+console.log(updateUser)
+Output: {firstName: 'Nag', lastName: 'Sai'}
+
 
 
