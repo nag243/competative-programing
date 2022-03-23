@@ -479,7 +479,7 @@ const {name} = props[1]
 console.log(name)
 Output: Sai
 
-<!-- Js quiz - 34 -->
+<!-- JS quiz - 34 -->
 
 const user = {
     firstName:'Nag',
@@ -490,5 +490,26 @@ const { private, ...updateUser} = user
 console.log(updateUser)
 Output: {firstName: 'Nag', lastName: 'Sai'}
 
+<!-- JS quiz - 35 -->
+<!-- use.groupeBy() to group objects in an array based on a given property  -->
+<!-- Note: .groupeBy() isonly supported in Firefox Nightly at preset -->
+const items = [
+    { name: 'bananas', type: 'fruit'},
+    { name: 'goat', type: 'meat'},
+    { name: 'cherriew', type: 'fruit'}
+]
+const grouped = items.groupBy(((type)) => type);
 
+console.log(grouped);
 
+output:
+{
+    fruit :[
+        { name: "bananas", type: "fruit"},
+        { name: "cherriew", type: "fruit"}
+    ],
+    meat :[
+        { name: "cherriew", type: "fruit"}
+    ]
+}
+    
