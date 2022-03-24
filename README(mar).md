@@ -540,3 +540,11 @@ age: 25
 hobbies: (3) ['swimming', 'walking', 'coding']
 name: "nag"
 
+<!-- JS quiz - 37 -->
+<!-- Reason - We are passing a number as argument in the function. In function, we are taking this argument and using the rest operator. It exactly take this argument and treated an array value becoz of rest operator. So inside the function, it will be like [21]. So when you are trying to find typeof of an array, it will give you object. -->
+function getUserId(...args){
+    console.log(typeof args);
+}
+
+getUserId(21)
+object
