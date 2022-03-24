@@ -513,3 +513,30 @@ output:
     ]
 }
     
+<!--JS quiz - 36  -->
+<!-- We can do deep copy of a reference data type using JSON.stringify() and JSON.parse() methods -->
+<!-- When we use this method, we are simply converting our object to a string(stringify) and then immediately converting it back to an object(parse) -->
+
+let obj = {
+    name:"nag",
+    age: 25,
+    hobbies: ["swimming", "badminton", "coding"],
+}
+
+let copyObj = JSON.parse(JSON.stringify(obj));
+
+copyObj.hobbies[1] = "walking";
+'walking'
+console.log(obj)
+ output:
+{name: 'nag', age: 25, hobbies: Array(3)}
+age: 25
+hobbies: (3) ['swimming', 'badminton', 'coding']
+name: "nag"
+console.log(copyObj)
+output:
+{name: 'nag', age: 25, hobbies: Array(3)}
+age: 25
+hobbies: (3) ['swimming', 'walking', 'coding']
+name: "nag"
+
