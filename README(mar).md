@@ -548,3 +548,18 @@ function getUserId(...args){
 
 getUserId(21)
 object
+
+<!-- JS quiz - 38 -->
+
+<!-- The logical AND assignment (x &&= y) operator only assigns if x is truthy  
+ The logical AND operator is evaluated left to right, it is tested for possible short-circuit evalution-->
+
+<!-- old way -->
+if(x) {
+    x = 5;
+}
+
+<!-- es6 new way -->
+x &&= 5;
+ 
+
