@@ -579,5 +579,14 @@ const addToCartEvent = new CustomEvent('Add-to-cart', {
 
 window.dispatchEvent(addToCartEvent)
 
+<!-- JS quiz - 40 -->
+const num = parseInt('5*4', 10);
+
+console.log(num)
+5
+<!-- Answer - 5
+Reason - parseInt(value, radix) is used to parse the string value into an integer. Here, value represents the string which need to be parsed and radix represent the number system to be used. Example parseInt('100', 2) here string need to be parsed from binary number to decimal number. '100' is the binary number which is equivalent to '4' in decimal.
+As in the question, we have '5*4' which need to be convert into decimal number. As parsing starts it parse 5 then when it find * which is not a number. So parsing stop at that point and further characters will get ignored. So that's why answer will be 5. -->
+
  
 
