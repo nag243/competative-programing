@@ -561,5 +561,23 @@ if(x) {
 
 <!-- es6 new way -->
 x &&= 5;
+
+<!-- JS quiz - 39 -->
+
+<!-- add-to-cart.js component -->
+window.addEventListener('add-to-cart', ({ detail}) => {
+    addToCart(detail);
+})
+
+<!-- product-details.js component -->
+const addToCartEvent = new CustomEvent('Add-to-cart', {
+    detail :{
+        item : 'Nokia 5.3',
+        itemId: '450948640420',
+    },
+});
+
+window.dispatchEvent(addToCartEvent)
+
  
 
