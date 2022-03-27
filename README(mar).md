@@ -589,4 +589,17 @@ Reason - parseInt(value, radix) is used to parse the string value into an intege
 As in the question, we have '5*4' which need to be convert into decimal number. As parsing starts it parse 5 then when it find * which is not a number. So parsing stop at that point and further characters will get ignored. So that's why answer will be 5. -->
 
  
+<!-- JS quiz - 41 -->
+const isValid = false
+const age = 18
+<!-- we can use spread operator (...) add properties to object-->
+const person = {
+    id:'mn43',
+    name:'commander',
+    ...(isValid && {isActive : true }), // (false && (isActive:true))
+    ...((age>=18 || isValid) && {cart: 0}) // (true && {cart:0})
+}
 
+console.log(person)
+Output:
+{id: 'mn43', name: 'commander', cart: 0}
