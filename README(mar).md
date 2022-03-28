@@ -623,3 +623,33 @@ Output:[5, 4, 3, 2, 1]
 numbers.sort((a, b) => a- b)
 console.log(numbers)
 Output:[1, 2, 3, 4, 5]
+
+<!-- JS quiz - 44 -->
+<!-- The nullish coalescing operator will return its right-hand operand when the left side is null or undefined. Not just falsy.
+
+When working with numbers, this is typically very useful. -->
+
+let price_1 = 0;
+let price_2;
+
+<!-- not recommanded way -->
+<!-- Assign a default if "price" is not set -->
+const defaultPrice_1 = price_1 || 10;
+const defaultPrice_2 = price_2 || 5;
+
+console.log(defaultPrice_1); // 10
+console.log(defaultPrice_2); //5
+
+<!-- It will work perfectly -->
+let price_1 = 0;
+let price_2;
+
+<!-- Assign a default if "price" is not set -->
+const defaultPrice_1 = price_1 ?? 10;
+const defaultPrice_2 = price_2 ?? 5;
+
+console.log(defaultPrice_1); // 10
+console.log(defaultPrice_2); //5
+
+
+
