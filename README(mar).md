@@ -603,3 +603,14 @@ const person = {
 console.log(person)
 Output:
 {id: 'mn43', name: 'commander', cart: 0}
+
+<!-- JS quiz - 42 -->
+
+<div onclick="console.log('div')">
+    <p onclick="console.log('p')">
+    Click here!
+    </p
+</div>
+<!-- Answer is p, div. During event propagation, there are 3 phases: capturing, target, and bubbling. By default, event handlers are executed in the bubbling phase (unless you set useCapture to true). It goes from the deepest nested element outwards. -->
+Answer: is p,div 
+
