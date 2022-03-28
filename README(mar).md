@@ -614,3 +614,12 @@ Output:
 <!-- Answer is p, div. During event propagation, there are 3 phases: capturing, target, and bubbling. By default, event handlers are executed in the bubbling phase (unless you set useCapture to true). It goes from the deepest nested element outwards. -->
 Answer: is p,div 
 
+<!-- JS quiz - 43 -->
+<!--🚀 𝗧𝗵𝗲 𝗲𝗮𝘀𝗶𝗲𝘀𝘁 𝘄𝗮𝘆 𝘁𝗼 𝘀𝗼𝗿𝘁 𝗻𝘂𝗺𝗯𝗲𝗿𝘀 𝗶𝗻 𝗮𝗿𝗿𝗮𝘆 𝗶𝘀 𝘂𝘀𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗼𝗿𝘁 () 𝗺𝗲𝘁𝗵𝗼𝗱 𝘄𝗶𝘁𝗵 𝗰𝗼𝗺𝗽𝗮𝗿𝗲 𝗳𝘂𝗻𝗰𝘁𝗶𝗼𝗻   -->
+let numbers = [1,4,5,3,2]
+numbers.sort((a,b) => b - a);
+Output:[5, 4, 3, 2, 1]
+
+numbers.sort((a, b) => a- b)
+console.log(numbers)
+Output:[1, 2, 3, 4, 5]
