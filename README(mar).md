@@ -651,5 +651,17 @@ const defaultPrice_2 = price_2 ?? 5;
 console.log(defaultPrice_1); // 10
 console.log(defaultPrice_2); //5
 
+<!-- JS quiz - 45 -->
+function myFun(x,y, ...myargs){
+    let sum = 0;
+    myargs.forEach(value =>{
+        sum+=value
+    })
+    console.log(sum)
+}
+    
 
-
+myFun(1,2,3,4,5)
+Output:12
+myFun(1,2)
+Output:0
