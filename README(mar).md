@@ -665,3 +665,30 @@ myFun(1,2,3,4,5)
 Output:12
 myFun(1,2)
 Output:0
+
+<!-- JS quiz - 46 -->
+<!-- How to compare Two javascript arrays-->
+<!-- 1-The JSON.Stringify() method  -->
+let firstArr  = [1,2,[3,4,5]];
+let secondArr = [1,2,[3,4,5]];
+
+let isEqual = JSON.stringify(firstArr)=== JSON.stringify(secondArr)
+console.log(isEqual)
+true
+
+
+<!-- 2.the to.string() method -->
+let firstArr  = [1,2,3,4,5];
+let secondArr = [1,2,3,4,5];
+
+let isEqual = firstArr.toString() === secondArr.toString();
+
+console.log(isEqual)
+true
+
+<!-- 3.The Array.prototyoe.every() Method -->
+let isEqual = firstArr.length === secondArr.length && firstArr.every((value, index) => value === secondArr[index]);
+
+console.log(isEqual)
+true
+
