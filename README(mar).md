@@ -692,3 +692,10 @@ let isEqual = firstArr.length === secondArr.length && firstArr.every((value, ind
 console.log(isEqual)
 true
 
+<!-- JS quiz - 47 -->
+<!-- unary operator(+) attempts to convert its operand to a number if it is not a number. numerical value of true is 1 where as "true" is a string so its numerical value is Nan. -->
+console.log(+true)
+1
+
+console.log(+"true")
+NaN
