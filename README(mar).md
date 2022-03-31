@@ -699,3 +699,26 @@ console.log(+true)
 
 console.log(+"true")
 NaN
+
+<!-- JS Quiz- 48 -->
+<!-- 𝟯 𝘀𝗶𝗺𝗽𝗹𝗲 𝘄𝗮𝘆𝘀 𝘁𝗼 𝗰𝗹𝗼𝗻𝗲 𝗼𝗯𝗷𝗲𝗰𝘁𝘀 𝗶𝗻 𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁  -->
+
+const user = {
+    name:'Nag',
+    age: 25
+}
+
+<!-- 1-Using Spread operator -->
+
+console.log({...user})
+{name: 'Nag', age: 25}
+
+<!--2- Deep Clonig Using JSON -->//mostly not recomendable 
+console.log(JSON.parse(JSON.stringify(user)))
+{name: 'Nag', age: 25}
+
+<!-- 3-Using Object Method -->
+console.log(Object.assign({}, user))
+{name: 'Nag', age: 25}
+
+
