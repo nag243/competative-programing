@@ -721,4 +721,21 @@ console.log(JSON.parse(JSON.stringify(user)))
 console.log(Object.assign({}, user))
 {name: 'Nag', age: 25}
 
+<!-- JS quiz - 49 -->
+<!-- Which of the following will not return "W" ? -->
+const greeting = "Hello, World!"
+
+greeting[7]
+'W'
+
+greeting.find(7)
+VM1863:1 Uncaught TypeError: greeting.find is not a function
+    at <anonymous>:1:10
+
+greeting.charAt(7)
+'W'
+
+greeting.slice(7,8)
+'W'
+
 
