@@ -18,3 +18,17 @@ factorial(3)
 6
 factorial(5)
 120
+// JS Quiz - 3
+// Boolean of [ ], { } is true,
+// type of [ ] is object
+const array = [];
+
+if(!array) {
+    console.log("I have no values")
+}
+
+if(!array?.length) {
+    console.log("No, I really have no values");
+}
+// Output:
+// No, I really have no values
