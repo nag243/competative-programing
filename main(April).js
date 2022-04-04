@@ -32,3 +32,10 @@ if(!array?.length) {
 }
 // Output:
 // No, I really have no values
+
+// JS Quiz - 4
+//  How to get the battery status of user machine's
+
+navigator.getBattery().then((battery) =>{
+    console.log(battery)
+})
