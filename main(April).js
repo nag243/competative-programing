@@ -39,3 +39,14 @@ if(!array?.length) {
 navigator.getBattery().then((battery) =>{
     console.log(battery)
 })
+
+// JS Quiz - 5
+
+// Short circuit statements can be difficult to read Use with caution!
+
+condition && doAction();
+// Short circuit evalution is a neat trick. if the left side of an AND is aleady false, you don't need to evalute the right side.
+if(condition){
+    doAction();
+}
+
