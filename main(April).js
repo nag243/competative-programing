@@ -50,3 +50,14 @@ if(condition){
     doAction();
 }
 
+// JS Quiz - 6
+
+navigator.geolocation.getCurrentPosition(function getPosition (position) {
+    console.log( position.coords.latitude);
+    console.log(position.coords.longitude)
+})
+
+// Output:
+// 14.6154
+// 80.1057
+
