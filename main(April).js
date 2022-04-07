@@ -61,3 +61,8 @@ navigator.geolocation.getCurrentPosition(function getPosition (position) {
 // 14.6154
 // 80.1057
 
+// JS Quiz - 7
+// Replace with value 0 from index 1 up to but not including 3.
+console.log([1,2,3,4,5].fill(0,1,3))
+ [1, 0, 0, 4, 5]
+
