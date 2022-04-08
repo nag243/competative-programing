@@ -66,3 +66,14 @@ navigator.geolocation.getCurrentPosition(function getPosition (position) {
 console.log([1,2,3,4,5].fill(0,1,3))
  [1, 0, 0, 4, 5]
 
+// JS Quiz - 8
+// The .reduce() array method in JavaScript is really powerful - and it's useful to combine multiple elements from an array into a single value
+const prices = [8,41,17,29,33]
+
+const sum = prices.reduce((totalPrice, currentPrice) => {
+    return totalPrice += currentPrice
+}, 0)
+console.log(sum)
+// Output:
+// 128
+
