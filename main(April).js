@@ -77,3 +77,15 @@ console.log(sum)
 // Output:
 // 128
 
+// JS Quiz - 9
+// delete operator in JavaScript
+const user = {
+    firstName:'Nag',
+    lastName: 'Wick'
+};
+
+delete user.lastName;
+
+console.log(user)
+{firstName: 'Nag'}
+
