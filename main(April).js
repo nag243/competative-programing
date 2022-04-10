@@ -89,3 +89,15 @@ delete user.lastName;
 console.log(user)
 {firstName: 'Nag'}
 
+//  JS Quiz - 10
+// ***** Regex with Javascript ****
+// Match string pattern and ignore upper nd lowercase characters with i flag
+const string = "my name is nag"
+
+let reg = /nag/i;
+
+let result = reg.test(string);
+
+console.log(result)
+true
+
