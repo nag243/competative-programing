@@ -101,3 +101,14 @@ let result = reg.test(string);
 console.log(result)
 true
 
+//  JS Quiz - 11
+const handleVisabilityChange=()=>{
+    if(document.visibilityState === "hiden") {
+        console.log("user left the page")
+    } else {
+        console.log("user opened the page")
+    }
+}
+
+document.addEventListener("visibilitychange", handleVisabilityChange);
+
