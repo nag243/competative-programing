@@ -132,3 +132,27 @@ function num(x) {
 console.log(num(2)(3)(4))
 24
 
+// JS Quiz - 13
+console.log('first')
+
+function second() {
+    setTimeout(function () {
+        console.log('second') }, 2000)
+}
+
+function third() {
+    setTimeout(function () {
+        console.log('third') }, 1000)
+}
+
+async function start() {
+    await second();
+    third();
+}
+
+start()
+// Output: 
+// first 
+// third
+// second
+
