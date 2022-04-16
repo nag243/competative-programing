@@ -198,7 +198,12 @@ else
 // Output:
 // At least one element was odd
 
+// JS Quiz - 16
+// Generate random number between two numbers in JavaScript
 
+function randomIntFromInterval(min, max) {
+    return Math.floor(Math.random()*(max - min + 1) + min)
+}
 
 
 
