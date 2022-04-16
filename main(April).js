@@ -240,4 +240,23 @@ console.log(newNumbers)
 // Output:[40, 50, 60]
 
 
+// JS Quiz - 20
+// Answer - Error, 200)
+// Reason - In the function expression, it has object as an parameter which have two property as default value.
+// So, it expect that whenever this function get called it should have object as argument even it can be empty.
+// So when we call that function without any argument then it will through an error saying "cannot read properties of undefined".
+// Where as in other case, it will use default paramter value and will print as 200.
+
+const area=({length = 10, width = 20})=>{
+    console.log(length*width)
+}
+
+area();
+// Output:
+// error
+area({})
+// Output:
+// 200
+
+
 
