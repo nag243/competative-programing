@@ -274,5 +274,32 @@ function checkAge () {
 console.log(checkAge())
 // Output:Below 18
 
+// JS Quiz - 22
+// function passed to setTimout is executed after 1 minute, but the thing is that setTimeout
+//  executes the function without any context. 
+// So the default binding of this in a non strict binding is the window environment. 
+// In that environment var x = 4 is declared thats why this.x is resolved to a value of 4
+
+var x=  4,
+    obj = {
+        x:3,
+        bar:function() {
+            var x = 2;
+            setTimeout(function() {
+                var x = 1;
+                alert(this.x);
+            },1000);
+        }
+    };
+
+obj.bar();
+// Guess the Output:
+// 1
+// 2
+// 3
+// 4
+// Output:It it will alert as 4 
+
+
 
 
