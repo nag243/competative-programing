@@ -212,13 +212,23 @@ function randomIntFromInterval(min, max) {
 
 const numbers  = [1,2,3,9,5,6,4];
 
-const over_severn = x => x<7;
+const over_severn = x => x>7;
 
 if(numbers.some(over_severn))
     console.log('at least one element bigger than 7 was found');
 else 
     console.log('No element bigger than 7  was found');
 // Output: at least one element bigger than 7 was found
+
+
+// JS Quiz - 18
+// When you run the console.log, it simply calls toString method on array and converts it to string. It calls this method because of the '+' to add them.
+// Now, when we have two strings, it will concat them and return the result.
+var array1 = [1,2,3]
+var array2 = [4,,5,6]
+
+console.log(array1+array2)
+// Output:1,2,34,,5,6
 
 
 
