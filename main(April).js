@@ -206,6 +206,19 @@ function randomIntFromInterval(min, max) {
 }
 
 
+// JS Quiz - 17
+// Some() is similar to every(), with a small difference.
+// When every() checks if all elements pass a condition, some() returns true when at least one element passes a condition.
+
+const numbers  = [1,2,3,9,5,6,4];
+
+const over_severn = x => x<7;
+
+if(numbers.some(over_severn))
+    console.log('at least one element bigger than 7 was found');
+else 
+    console.log('No element bigger than 7  was found');
+// Output: at least one element bigger than 7 was found
 
 
 
