@@ -258,5 +258,21 @@ area({})
 // Output:
 // 200
 
+// JS Quiz - 21
+// Reason - As in this function, 'age' we are comparing but here it is in octal format.
+// Any number starts with 0 and followed by 0 to 7 as remaining digit is treated as Octal number whose base is 8.
+// So to perform any arithmetic or logical operation, this octal number need to be convert in decimal. Here it is:
+// 021 => 0x(8^2) + 2x(8^1) + 1x(8^0)
+// 021 => 0 + 16 + 1 => 17
+// Now, we are comparing this 17 >= 18 and based on comparison it is choosing the value kept in ternary operator.
+
+function checkAge () {
+    var age = 021;
+    return age >= 18 ? "Above 18" : "Below 18";
+}
+
+console.log(checkAge())
+// Output:Below 18
+
 
 
