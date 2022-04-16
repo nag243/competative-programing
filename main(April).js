@@ -231,4 +231,13 @@ console.log(array1+array2)
 // Output:1,2,34,,5,6
 
 
+// JS Quiz - 19
+//Use blanck commas to skip over unwatnted values and assign the remaining part of it to a variable using rest pattern while array destrructuring 
+const allNumbers = [10,20,30,40,50,60]
+const [,,, ...newNumbers] = allNumbers;
+
+console.log(newNumbers)
+// Output:[40, 50, 60]
+
+
 
