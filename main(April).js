@@ -300,6 +300,24 @@ obj.bar();
 // 4
 // Output:It it will alert as 4 
 
+// JS Quiz - 23
+// You can use the yield keyword to process and return data, on-demand, in an infinite sequence 🚀🔥💡.
+
+function* idSequence() {
+    let i = 0;
+
+    while (true) {
+        yield i++
+    }
+}
+
+const generateId = idSequence();
+
+console.log(generateId.next().value);//0
+console.log(generateId.next().value);//1
+console.log(generateId.next().value);//2
+console.log(generateId.next().value);//3
+
 
 
 
