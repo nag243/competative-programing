@@ -318,6 +318,15 @@ console.log(generateId.next().value);//1
 console.log(generateId.next().value);//2
 console.log(generateId.next().value);//3
 
+// JS Quiz - 24
+// Detect if the user device is mobile 
+if(/Andriod|WebOS|iPhone|OperaMini/i.test(navigator.userAgent)){
+    console.log("mobile")
+}
+else{
+    console.log("Not mobile device");
+}
+
 
 
 
