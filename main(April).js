@@ -160,23 +160,25 @@ start()
 
 // JS Quiz - 14
 // Looking for the output as first, second, third
-console.log('first'); 
+console.log('first');
 
-function second(){ 
-return new   Promise((resolve,reject)=>{
- setTimeout(function(){ 
-   console.log('second') },2000)
-})
-} 
+function second() {
+    return new Promise((resolve, reject) => {
+        setTimeout(function () {
+            console.log('second')
+        }, 2000)
+    })
+}
 
-function third(){ 
- setTimeout(function(){ 
-   console.log('third') },1000) 
-} 
-async function start(){ 
- await second();
- third(); 
-} 
+function third() {
+    setTimeout(function () {
+        console.log('third')
+    }, 1000)
+}
+async function start() {
+    await second();
+    third();
+}
 start();
 // Output:
 // first
@@ -202,7 +204,7 @@ else
 // Generate random number between two numbers in JavaScript
 
 function randomIntFromInterval(min, max) {
-    return Math.floor(Math.random()*(max - min + 1) + min)
+    return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
 
@@ -210,13 +212,13 @@ function randomIntFromInterval(min, max) {
 // Some() is similar to every(), with a small difference.
 // When every() checks if all elements pass a condition, some() returns true when at least one element passes a condition.
 
-const numbers  = [1,2,3,9,5,6,4];
+const numbers = [1, 2, 3, 9, 5, 6, 4];
 
-const over_severn = x => x>7;
+const over_severn = x => x > 7;
 
-if(numbers.some(over_severn))
+if (numbers.some(over_severn))
     console.log('at least one element bigger than 7 was found');
-else 
+else
     console.log('No element bigger than 7  was found');
 // Output: at least one element bigger than 7 was found
 
@@ -224,17 +226,17 @@ else
 // JS Quiz - 18
 // When you run the console.log, it simply calls toString method on array and converts it to string. It calls this method because of the '+' to add them.
 // Now, when we have two strings, it will concat them and return the result.
-var array1 = [1,2,3]
-var array2 = [4,,5,6]
+var array1 = [1, 2, 3]
+var array2 = [4, , 5, 6]
 
-console.log(array1+array2)
+console.log(array1 + array2)
 // Output:1,2,34,,5,6
 
 
 // JS Quiz - 19
 //Use blanck commas to skip over unwatnted values and assign the remaining part of it to a variable using rest pattern while array destrructuring 
-const allNumbers = [10,20,30,40,50,60]
-const [,,, ...newNumbers] = allNumbers;
+const allNumbers = [10, 20, 30, 40, 50, 60]
+const [, , , ...newNumbers] = allNumbers;
 
 console.log(newNumbers)
 // Output:[40, 50, 60]
@@ -247,8 +249,8 @@ console.log(newNumbers)
 // So when we call that function without any argument then it will through an error saying "cannot read properties of undefined".
 // Where as in other case, it will use default paramter value and will print as 200.
 
-const area=({length = 10, width = 20})=>{
-    console.log(length*width)
+const area = ({ length = 10, width = 20 }) => {
+    console.log(length * width)
 }
 
 area();
@@ -266,7 +268,7 @@ area({})
 // 021 => 0 + 16 + 1 => 17
 // Now, we are comparing this 17 >= 18 and based on comparison it is choosing the value kept in ternary operator.
 
-function checkAge () {
+function checkAge() {
     var age = 021;
     return age >= 18 ? "Above 18" : "Below 18";
 }
@@ -280,15 +282,15 @@ console.log(checkAge())
 // So the default binding of this in a non strict binding is the window environment. 
 // In that environment var x = 4 is declared thats why this.x is resolved to a value of 4
 
-var x=  4,
+var x = 4,
     obj = {
-        x:3,
-        bar:function() {
+        x: 3,
+        bar: function () {
             var x = 2;
-            setTimeout(function() {
+            setTimeout(function () {
                 var x = 1;
                 alert(this.x);
-            },1000);
+            }, 1000);
         }
     };
 
@@ -320,13 +322,31 @@ console.log(generateId.next().value);//3
 
 // JS Quiz - 24
 // Detect if the user device is mobile 
-if(/Andriod|WebOS|iPhone|OperaMini/i.test(navigator.userAgent)){
+if (/Andriod|WebOS|iPhone|OperaMini/i.test(navigator.userAgent)) {
     console.log("mobile")
 }
-else{
+else {
     console.log("Not mobile device");
 }
 
+// JS Quiz - 25
+// EVENT LISTENER ONLY ONCE 
+// EVent LIstner which listerns to an event any number of times
+
+button.addEeventListener(
+    "click",
+    () => {
+        console.log("CLICKED");
+    },
+);
+// Event listener that listnes to any event justy once
+button.addEventLIstner(
+    "click",
+    () => {
+        console.log("CLICIKED");
+    },
+    { once: true },
+);
 
 
 
