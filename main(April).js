@@ -348,5 +348,12 @@ button.addEventLIstner(
     { once: true },
 );
 
+// JS Quiz - 26
 
+let arraY = [1,3,"5", 7,9, "11"];
 
+let value1 = Math.max.apply(null, arraY)
+let value2 = Math.max.apply(arraY, null)
+
+console.log(value1, value2)
+// output:11 -Infinity
