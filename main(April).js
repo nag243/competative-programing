@@ -357,3 +357,17 @@ let value2 = Math.max.apply(arraY, null)
 
 console.log(value1, value2)
 // output:11 -Infinity
+
+// JS Quiz - 27
+
+// But we already defined age variable, however in strict mode it will treat as
+// "Using a variable, without declaring it, is not allowed"
+function getAge(){
+    'use strict';
+    age= 21;
+    console.log(age);
+}
+
+getAge()
+// Ans: Reference Error: age is not defined
+
