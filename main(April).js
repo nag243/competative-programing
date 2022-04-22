@@ -371,3 +371,15 @@ function getAge(){
 getAge()
 // Ans: Reference Error: age is not defined
 
+// JS Quiz - 28
+// Reason - In function definition, we have declared parameter as an object. 
+// But while calling the function we have passed separate numbers as argument.
+//  So it is trying to get values from object but becoz we have not passed appropriate data.
+//   So it will result as NaN (Not a number).
+// const add = ({a,b,c}) =>{
+    console.log(a+b-c);
+};
+
+add(3,4,5)
+// Output:
+// NaN
