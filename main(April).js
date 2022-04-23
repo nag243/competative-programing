@@ -350,7 +350,7 @@ button.addEventLIstner(
 
 // JS Quiz - 26
 
-let arraY = [1,3,"5", 7,9, "11"];
+let arraY = [1, 3, "5", 7, 9, "11"];
 
 let value1 = Math.max.apply(null, arraY)
 let value2 = Math.max.apply(arraY, null)
@@ -362,9 +362,9 @@ console.log(value1, value2)
 
 // But we already defined age variable, however in strict mode it will treat as
 // "Using a variable, without declaring it, is not allowed"
-function getAge(){
+function getAge() {
     'use strict';
-    age= 21;
+    age = 21;
     console.log(age);
 }
 
@@ -377,9 +377,18 @@ getAge()
 //  So it is trying to get values from object but becoz we have not passed appropriate data.
 //   So it will result as NaN (Not a number).
 // const add = ({a,b,c}) =>{
-    console.log(a+b-c);
+console.log(a + b - c);
 };
 
-add(3,4,5)
-// Output:
-// NaN
+add(3, 4, 5)
+    // Output:
+    // NaN
+
+    // JS Quiz - 29
+
+    (() => {
+        let x = (y = 10);
+    })();
+
+console.log(typeof x); //undefined
+console.log(typeof y);// number
