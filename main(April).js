@@ -392,3 +392,9 @@ add(3, 4, 5)
 
 console.log(typeof x); //undefined
 console.log(typeof y);// number
+
+// JS Quiz - 30
+console.log(!!null) //false
+console.log(!!'') //false
+console.log(!!1) //true
+
