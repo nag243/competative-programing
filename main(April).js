@@ -376,7 +376,7 @@ getAge()
 // But while calling the function we have passed separate numbers as argument.
 //  So it is trying to get values from object but becoz we have not passed appropriate data.
 //   So it will result as NaN (Not a number).
-// const add = ({a,b,c}) =>{
+const add = ({a,b,c}) =>{
 console.log(a + b - c);
 };
 
