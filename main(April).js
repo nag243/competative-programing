@@ -398,3 +398,9 @@ console.log(!!null) //false
 console.log(!!'') //false
 console.log(!!1) //true
 
+// JS Quiz - 31
+const {a:x=10,b:y=20} = {a:30};
+
+console.log(x) //30
+console.log(y) //20
+
