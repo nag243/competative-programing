@@ -404,3 +404,10 @@ const {a:x=10,b:y=20} = {a:30};
 console.log(x) //30
 console.log(y) //20
 
+// JS Quiz  - 32
+
+// removie zeros in an array using filter method()
+
+listWithZeros = ['0', '5', '9', '0', '4']
+newList = listWithZeros.filter(cv => cv != "0")
+console.log(newList) //    ["5", "9", "4"]
