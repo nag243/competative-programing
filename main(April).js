@@ -411,3 +411,13 @@ console.log(y) //20
 listWithZeros = ['0', '5', '9', '0', '4']
 newList = listWithZeros.filter(cv => cv != "0")
 console.log(newList) //    ["5", "9", "4"]
+
+// JS Quiz  - 33
+//One of many ways to get the array items from the last index in #javascript.
+
+let list = [100,200,300,400,500]
+
+console.log(list.slice(-1))
+// [500]
+console.log(list.slice(-2))
+// [400, 500]
