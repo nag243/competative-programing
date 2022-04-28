@@ -440,3 +440,16 @@ console.log(findMin(marks))
 // 20
 console.log(findMax(marks))
 // 70
+
+// JS Quiz  - 35
+var person = {
+    name:'Nag',
+    getName:function(){
+        return this.name 
+    }
+}
+var person1={
+    name:'sai'
+}
+console.log(person.getName.call(person1))
+//  sai
