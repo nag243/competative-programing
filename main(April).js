@@ -453,3 +453,20 @@ var person1={
 }
 console.log(person.getName.call(person1))
 //  sai
+
+// JS Quiz  - 36
+// JavaScript has constant declaration for variables that cannot be reassigned or changed.
+// However, when it comes to objects, you can still assign,
+//  delete or make new properties. Object.define() allows to make the object a read only variable.
+
+var obj = {};
+undeined
+Object.defineProperties(obj, 'readonly',{
+    value:2022,
+    writable:false
+});
+
+obj.readonly = 20;
+
+console.log(obj.readonly)
+// 20
