@@ -470,3 +470,15 @@ obj.readonly = 20;
 
 console.log(obj.readonly)
 // 20
+
+// JS Quiz  - 37
+// If you happen to work with tree data structures or nested arrays,
+// looping over all the nodes/elements can be quite annoying.
+// One of the ways to simplify the process if to flatten an array with .flat() function.
+
+let nestedArray = [[1,2],[3,4,5],[6,7,8,9]];
+
+let newArray = nestedArray.flat();
+
+console.log(newArray)
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
