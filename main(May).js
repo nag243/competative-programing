@@ -26,3 +26,10 @@ console.log(2147883647 + 1000)
 console.log(~~[]) //0
 console.log(~~NaN) //0
 console.log(~~null) //0
+
+// JS Quiz  - 3
+// Add underscore between your digits for easier formatting and stop counting zeros (format big numbers in Javscript)
+
+const million = 1_000_000;
+const billion = 1_000_000_000;
+const trillion = 1_000_000_000_000
