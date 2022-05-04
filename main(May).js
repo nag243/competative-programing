@@ -32,4 +32,18 @@ console.log(~~null) //0
 
 const million = 1_000_000;
 const billion = 1_000_000_000;
-const trillion = 1_000_000_000_000
+const trillion = 1_000_000_000_000;
+
+// JS Quiz - 4 
+
+// filter even number
+nums.filter(function isEven(num) {
+    return num % 2 ===0;
+})
+//  [2, 4, 6, 8]
+
+// filter odd number
+nums.filter(function isOdd(num) {
+    return num % 2 !=0;
+})
+// [1, 3, 5, 7]
