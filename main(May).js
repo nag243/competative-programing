@@ -47,3 +47,15 @@ nums.filter(function isOdd(num) {
     return num % 2 !=0;
 })
 // [1, 3, 5, 7]
+
+// JS Quiz - 5
+// .concat()  Generating a new array by adding by adding array elements
+// we can join two or more array
+
+const firstNames = ["Nag","Jai","Victor"];
+const lastNames = ["Rockz","Balayya", "Vicky"]
+
+const fullNames= firstNames.concat(lastNames);
+
+console.log(fullNames)
+// ['Nag', 'Jai', 'Victor', 'Rockz', 'Balayya', 'Vicky']
