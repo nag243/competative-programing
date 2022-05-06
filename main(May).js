@@ -59,3 +59,15 @@ const fullNames= firstNames.concat(lastNames);
 
 console.log(fullNames)
 // ['Nag', 'Jai', 'Victor', 'Rockz', 'Balayya', 'Vicky']
+
+// JS Quiz - 6
+// Serialize specific properties from a JSON object
+const user  = {
+    id: 1234,
+    username:'nagsai',
+    name:'Nag Sai',
+    age : 39
+};
+
+JSON.stringify(user, ['username', 'name'])
+// '{"username":"nagsai","name":"Nag Sai"}'
