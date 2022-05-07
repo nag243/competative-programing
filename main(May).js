@@ -71,3 +71,12 @@ const user  = {
 
 JSON.stringify(user, ['username', 'name'])
 // '{"username":"nagsai","name":"Nag Sai"}'
+
+// JS Quiz - 70
+// Array destructuring 
+// skip the first and third item on the list.
+let [,pronoun,,name] = ["Hello", "I" , "am", "Sarah"];
+
+console.log(pronoun);//"I"
+console.log(name);//"Sarah"
+
