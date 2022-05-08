@@ -72,11 +72,24 @@ const user  = {
 JSON.stringify(user, ['username', 'name'])
 // '{"username":"nagsai","name":"Nag Sai"}'
 
-// JS Quiz - 70
+// JS Quiz - 7
 // Array destructuring 
 // skip the first and third item on the list.
 let [,pronoun,,name] = ["Hello", "I" , "am", "Sarah"];
 
 console.log(pronoun);//"I"
 console.log(name);//"Sarah"
+
+// JS Quiz - 8
+// Why is this printing 1 instead of printing 2
+// when you pass 'func' to setTimeout it is not referring 'func' variable, 
+// instead to the original function itself (which func was pointing at that time)
+
+let func = () => {
+    console.log(1)
+  } 
+  setTimeout(func, 100)
+  func = () => {
+    console.log(2)
+  }
 
