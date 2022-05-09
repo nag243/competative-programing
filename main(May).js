@@ -38,13 +38,13 @@ const trillion = 1_000_000_000_000;
 
 // filter even number
 nums.filter(function isEven(num) {
-    return num % 2 ===0;
+    return num % 2 === 0;
 })
 //  [2, 4, 6, 8]
 
 // filter odd number
 nums.filter(function isOdd(num) {
-    return num % 2 !=0;
+    return num % 2 != 0;
 })
 // [1, 3, 5, 7]
 
@@ -52,21 +52,21 @@ nums.filter(function isOdd(num) {
 // .concat()  Generating a new array by adding by adding array elements
 // we can join two or more array
 
-const firstNames = ["Nag","Jai","Victor"];
-const lastNames = ["Rockz","Balayya", "Vicky"]
+const firstNames = ["Nag", "Jai", "Victor"];
+const lastNames = ["Rockz", "Balayya", "Vicky"]
 
-const fullNames= firstNames.concat(lastNames);
+const fullNames = firstNames.concat(lastNames);
 
 console.log(fullNames)
 // ['Nag', 'Jai', 'Victor', 'Rockz', 'Balayya', 'Vicky']
 
 // JS Quiz - 6
 // Serialize specific properties from a JSON object
-const user  = {
+const user = {
     id: 1234,
-    username:'nagsai',
-    name:'Nag Sai',
-    age : 39
+    username: 'nagsai',
+    name: 'Nag Sai',
+    age: 39
 };
 
 JSON.stringify(user, ['username', 'name'])
@@ -75,7 +75,7 @@ JSON.stringify(user, ['username', 'name'])
 // JS Quiz - 7
 // Array destructuring 
 // skip the first and third item on the list.
-let [,pronoun,,name] = ["Hello", "I" , "am", "Sarah"];
+let [, pronoun, , name] = ["Hello", "I", "am", "Sarah"];
 
 console.log(pronoun);//"I"
 console.log(name);//"Sarah"
@@ -85,11 +85,34 @@ console.log(name);//"Sarah"
 // when you pass 'func' to setTimeout it is not referring 'func' variable, 
 // instead to the original function itself (which func was pointing at that time)
 
-let func = () => {
+let funct = () => {
     console.log(1)
-  } 
-  setTimeout(func, 100)
-  func = () => {
+}
+setTimeout(funct, 100)
+funct = () => {
     console.log(2)
-  }
+}
+
+// JS Quiz - 9
+
+// Double bitwise NOT Operator (~~)
+
+// Note - Use of Double Bitwise NOT Operator reduces the readability of code but
+//  in some scenarios, it improves the performance of code.
+
+// The double bitwise NOT is actuallu not an operator on its own.
+//  it's just applying the single bitwise NOT operator(~) twice.
+
+// Note: This approch only works for 32-bit integers 
+// i.e (2**31) - 1 = 2147483637 .So for any number more than that use Math.floor().
+//longhand
+const a = Math.floor(6.9);
+console.log(a)
+6
+
+//shorthand
+const b  = ~~ 6.9
+console.log(b)
+6
+
 
