@@ -111,8 +111,21 @@ console.log(a)
 6
 
 //shorthand
-const b  = ~~ 6.9
+const b = ~~6.9
 console.log(b)
 6
 
+// JS Quiz - 10
+// Check if at least of one element in the array satisfy the condition 
+
+const people = [
+    { name: "Nag", Gender: "Male" },
+    { name: "Victor", Gender: "Male" },
+    { name: "Cren ", Gender: "Female" },
+    { name: "Jaun", Gender: "Female" },]
+
+const isWomen = people.some(user => user.Gender === 'Female')
+
+console.log(isWomen)
+true
 
