@@ -129,3 +129,12 @@ const isWomen = people.some(user => user.Gender === 'Female')
 console.log(isWomen)
 true
 
+// JS Quiz - 11
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruts.sort())
+//  ['Apple', 'Banana', 'Mango', 'Orange']
+
+// Note:But it won't work with numbers 
+
+
