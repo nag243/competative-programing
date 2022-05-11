@@ -133,6 +133,7 @@ true
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 console.log(fruts.sort())
+
 //  ['Apple', 'Banana', 'Mango', 'Orange']
 
 // Note:But it won't work with numbers 
