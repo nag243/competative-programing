@@ -138,4 +138,32 @@ console.log(fruts.sort())
 
 // Note:But it won't work with numbers 
 
+// JS Quiz - 12
+
+// The Event Loop reads this info and starts pushing each Call-back function from Call-Back Queue into the Call-Stack in the order they came in(FIFO).
+
+// For the first three call-back functions, ➡️ the value of i = 3.
+// because the for loop has updated the value to 3, before any call-back function is executed.
+// 1st CB Function -> i = 3, 
+// 2nd CB Function -> i = 3, 
+// 3rd CB Function -> i = 3.
+
+// And for the next 3 call-back functions, ➡️ the value of 'i' is 0, 1, 2.
+// because that's what each call-back function is bound with.
+// 1st CB Function -> i = 0, 
+// 2nd CB Function -> i = 1, 
+// 3rd CB Function -> i = 2.
+
+// ➡️ when i = 3 the condition becomes false, and
+// ➡️ No call-back function with i = 3 is pushed to the Call-Back Queue.
+for(var i= 0; i< 3; i++) {
+    setTimeout( () =>{ console.log(i),1)
+}
+// 3 3 3 
+
+for(let  i= 0; i< 3; i++) {
+    setTimeout( () =>{ console.log(i),1)
+}
+// 0 1 2 
+
 
