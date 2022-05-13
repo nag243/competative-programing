@@ -166,4 +166,18 @@ for(let  i= 0; i< 3; i++) {
 }
 // 0 1 2 
 
+// JS Quiz - 13
+// Javascript replaceAll() method!
+
+// Use this method to replace a character from the string completely.
+// It's very useful in situations where we have to remove unnecessary characters
+//  repeated across a string or change one word to another.
+
+const string  = '&Linkdin &Community &is the &best';
+
+const newString = string.replaceAll('&', '');
+
+console.log(newString) //Linkdin Community is the best
+
+
 
