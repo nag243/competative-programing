@@ -180,4 +180,19 @@ const newString = string.replaceAll('&', '');
 console.log(newString) //Linkdin Community is the best
 
 
+// JS Quiz - 14
+//𝗛𝗲𝗿𝗲 𝗮𝗿𝗲 𝗦𝘁𝗲𝗽𝘀 𝗜 𝗳𝗼𝗹𝗹𝗼𝘄𝗲𝗱 𝘁𝗼 𝘄𝗿𝗶𝘁𝗲 𝗟𝗼𝗴𝗶𝗻 𝗳𝘂𝗻𝗰𝘁𝗶𝗼𝗻𝗮𝗹𝗶𝘁𝘆 
+
+userSchema.statics.login=async function (email, password) {
+    const user=await this.findOne({email});
+    if(user) {
+        const auth=await bcrypt.compare(password, user.password)
+        if(auth){
+            return user 
+        }
+        throw Error ('incorrect password')
+    }
+    throw Error ('incorrenct email')
+}
+// https://www.linkedin.com/feed/update/urn:li:activity:6931174699494207488/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6931174699494207488%29
 
