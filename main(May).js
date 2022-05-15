@@ -196,3 +196,13 @@ userSchema.statics.login=async function (email, password) {
 }
 // https://www.linkedin.com/feed/update/urn:li:activity:6931174699494207488/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6931174699494207488%29
 
+
+// JS Quiz - 15
+// Replace a  value in object 
+var usr = {name: "John Doe", email: "johndoe@gmail.com"};
+
+// If you want to replace a part of email by another thing:
+usr.email = usr.email.replace("johndoe", "newjohndoe")
+
+// If you just want to setup a new email:
+usr.email = "newjohndoe@gmail.com"
