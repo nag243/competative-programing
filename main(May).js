@@ -206,3 +206,13 @@ usr.email = usr.email.replace("johndoe", "newjohndoe")
 
 // If you just want to setup a new email:
 usr.email = "newjohndoe@gmail.com"
+
+// JS Quiz - 16
+// null equal to itself or to undefined (null == null or null == undefined)
+// and null not comparable with(> or <) it will return false,
+// but will return true with comparison and equality together.
+console.log(null > 0)
+false
+
+console.log( null >= 0);
+true
