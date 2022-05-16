@@ -157,12 +157,12 @@ console.log(fruts.sort())
 // ➡️ when i = 3 the condition becomes false, and
 // ➡️ No call-back function with i = 3 is pushed to the Call-Back Queue.
 for(var i= 0; i< 3; i++) {
-    setTimeout( () =>{ console.log(i),1)
+    setTimeout( () =>{ console.log(i),1})
 }
 // 3 3 3 
 
 for(let  i= 0; i< 3; i++) {
-    setTimeout( () =>{ console.log(i),1)
+    setTimeout( () =>{ console.log(i),1})
 }
 // 0 1 2 
 
