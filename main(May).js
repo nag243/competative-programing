@@ -226,3 +226,8 @@ let language = (navigator.language && navigator.language[0]) ||
 
 console.log(language)
 // e
+
+// JS Quiz - 18
+const fruitss = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop();
+// Mango
