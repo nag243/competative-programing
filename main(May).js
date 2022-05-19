@@ -231,3 +231,13 @@ console.log(language)
 const fruitss = ["Banana", "Orange", "Apple", "Mango"];
 fruits.pop();
 // Mango
+
+//JS Quiz - 19
+
+// function invert(obj) {
+//     return Object.entries(obj).reduce((acc,[key, value]) =>{...acc,[value]:key},{} )
+// };
+let obj = { "age":12,"name": "xyz", "hairColor":"balck"};
+
+console.log(invert(obj));
+
