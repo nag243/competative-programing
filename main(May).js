@@ -156,13 +156,13 @@ console.log(fruts.sort())
 
 // ➡️ when i = 3 the condition becomes false, and
 // ➡️ No call-back function with i = 3 is pushed to the Call-Back Queue.
-for(var i= 0; i< 3; i++) {
-    setTimeout( () =>{ console.log(i),1})
+for (var i = 0; i < 3; i++) {
+    setTimeout(() => { console.log(i), 1 })
 }
 // 3 3 3 
 
-for(let  i= 0; i< 3; i++) {
-    setTimeout( () =>{ console.log(i),1})
+for (let i = 0; i < 3; i++) {
+    setTimeout(() => { console.log(i), 1 })
 }
 // 0 1 2 
 
@@ -173,7 +173,7 @@ for(let  i= 0; i< 3; i++) {
 // It's very useful in situations where we have to remove unnecessary characters
 //  repeated across a string or change one word to another.
 
-const string  = '&Linkdin &Community &is the &best';
+const string = '&Linkdin &Community &is the &best';
 
 const newString = string.replaceAll('&', '');
 
@@ -183,23 +183,23 @@ console.log(newString) //Linkdin Community is the best
 // JS Quiz - 14
 //𝗛𝗲𝗿𝗲 𝗮𝗿𝗲 𝗦𝘁𝗲𝗽𝘀 𝗜 𝗳𝗼𝗹𝗹𝗼𝘄𝗲𝗱 𝘁𝗼 𝘄𝗿𝗶𝘁𝗲 𝗟𝗼𝗴𝗶𝗻 𝗳𝘂𝗻𝗰𝘁𝗶𝗼𝗻𝗮𝗹𝗶𝘁𝘆 
 
-userSchema.statics.login=async function (email, password) {
-    const user=await this.findOne({email});
-    if(user) {
-        const auth=await bcrypt.compare(password, user.password)
-        if(auth){
-            return user 
+userSchema.statics.login = async function (email, password) {
+    const user = await this.findOne({ email });
+    if (user) {
+        const auth = await bcrypt.compare(password, user.password)
+        if (auth) {
+            return user
         }
-        throw Error ('incorrect password')
+        throw Error('incorrect password')
     }
-    throw Error ('incorrenct email')
+    throw Error('incorrenct email')
 }
 // https://www.linkedin.com/feed/update/urn:li:activity:6931174699494207488/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6931174699494207488%29
 
 
 // JS Quiz - 15
 // Replace a  value in object 
-var usr = {name: "John Doe", email: "johndoe@gmail.com"};
+var usr = { name: "John Doe", email: "johndoe@gmail.com" };
 
 // If you want to replace a part of email by another thing:
 usr.email = usr.email.replace("johndoe", "newjohndoe")
@@ -214,7 +214,7 @@ usr.email = "newjohndoe@gmail.com"
 console.log(null > 0)
 false
 
-console.log( null >= 0);
+console.log(null >= 0);
 true
 
 // JS Quiz - 17
@@ -222,7 +222,7 @@ true
 //  𝘵𝘩𝘦 𝘱𝘳𝘦𝘧𝘦𝘳𝘳𝘦𝘥 𝘭𝘢𝘯𝘨𝘶𝘢𝘨𝘦 𝘰𝘧 𝘵𝘩𝘦 𝘶𝘴𝘦𝘳 𝘶𝘴𝘶𝘢𝘭𝘭𝘺 𝘵𝘩𝘦 𝘭𝘢𝘯𝘨𝘶𝘢𝘨𝘦 𝘰𝘧 𝘵𝘩𝘦 𝘣𝘳𝘰𝘸𝘴𝘦𝘳 𝘜𝘐.
 // How to find the broswer language 
 let language = (navigator.language && navigator.language[0]) ||
-                 navigator.language || navigator.userLangugage; 
+    navigator.language || navigator.userLangugage;
 
 console.log(language)
 // e
@@ -237,7 +237,19 @@ fruits.pop();
 // function invert(obj) {
 //     return Object.entries(obj).reduce((acc,[key, value]) =>{...acc,[value]:key},{} )
 // };
-let obj = { "age":12,"name": "xyz", "hairColor":"balck"};
+let obj = { "age": 12, "name": "xyz", "hairColor": "balck" };
 
 console.log(invert(obj));
+
+// JS Quiz - 20
+// Simple one Liner to reverse words in a given string
+
+function reverse(str) {
+    return str.split(' ').reduceRight((acc, cur) => [...cur].reverse().join('') + ' ' + acc, '').trim()
+};
+
+let str = "JavaScript is awesome";
+
+console.log(reverse(str));
+// tpircSavaJ si emosewa
 
