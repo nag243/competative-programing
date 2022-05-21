@@ -269,5 +269,18 @@ console.log(reverse(str));
 // In an event, this refers to the element that received the event.
 // Methods like call(), apply(), and bind() can refer this to any object.
 
+// JS Quiz - 22
 
+(function() {
+    console.log(1); 
+    setTimeout(function(){console.log(2)}, 1000); 
+    setTimeout(function(){console.log(3)}, 0); 
+    console.log(4);
+})();
+
+// Output:
+// 1
+// 4
+// 3
+// 2
 
