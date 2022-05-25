@@ -291,3 +291,17 @@ console.log(reverse(str));
 // The finally statement defines a code block to run regardless of the result.
 // The throw statement defines a custom error.
 
+// JSQuiz - 24
+
+// https://blog.bitsrc.io/5-methods-to-reduce-javascript-bundle-size-67f2e1220457
+// 1. Code Splitting with Webpack
+// 2. Using Webpack Plugins for Tree Shaking
+// . Using babel-plugin-lodash
+// . Using babel-plugin-import
+// . Using Alternative Libraries and Removing Duplicates
+// Using the bundle analyzer
+// 4. Compressing Bundles
+// 5. Using Production Mode in Webpack
+
+
+
