@@ -303,5 +303,22 @@ console.log(reverse(str));
 // 4. Compressing Bundles
 // 5. Using Production Mode in Webpack
 
+// JSQuiz - 25
+// 𝗣𝗮𝗿𝗮𝗺𝗲𝘁𝗲𝗿 𝗱𝗲𝘀𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗶𝗻𝗴 allows a function
+//  to unpack the object provided as an argument into one or more local variables
+
+function fullName ({firstName, lastName}){
+    return `${firstName} ${lastName}`
+}
+undefined
+const user1 = {
+    email:'nag@gmail.com',
+    firstName:'Nag',
+    lastName:'Sai'
+}
+undefined
+console.log(fullName(user1))
+// Nag Sai
+
 
 
