@@ -320,5 +320,17 @@ undefined
 console.log(fullName(user1))
 // Nag Sai
 
+// JS Quiz - 26
+
+console.log(name)
+console.log(sayHi())
+// var name = 'Nag'  //due to error i commenetd 
+function sayHi(){
+    return "Hi"
+}
+ 
+// Hi
+// undefined
+
 
 
