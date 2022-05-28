@@ -332,5 +332,14 @@ function sayHi(){
 // Hi
 // undefined
 
+// JS Quiz - 27
+// Create Direcory using Javascript
+const fs = require('fs')
+const createDirIfNotExists = (dir) =>(
+    !fs.existsSync(dir) ? fs.msdirSunc(dir) :undefined)
+
+createDirIfNotExists('test')
+// crate the Directory 'test' , if it doesn't exist
+
 
 
