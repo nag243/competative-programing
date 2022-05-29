@@ -341,5 +341,12 @@ const createDirIfNotExists = (dir) =>(
 createDirIfNotExists('test')
 // crate the Directory 'test' , if it doesn't exist
 
+// JS Quiz - 28
+// copy text to clipboard
+
+let text = "This is some text"
+function copyButton_click(){
+    navigator.clipboard.writeText(text);
+}
 
 
