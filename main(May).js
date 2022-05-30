@@ -355,3 +355,20 @@ function copyButton_click(){
 var audioFile  =new Audio('audioFile.mp3')
 audioFile.play()
 
+// JS Quiz  - 30
+
+const p = new Promise((resolve) =>{
+    console.log(1);
+    setTimeout(() => resolve());
+});
+
+Promise.resolve().then(() => console.log(2));
+
+setTimeout(() => console.log(3));
+
+p.then(() => console.log(4));
+
+setTimeout (() => console.log(5));
+
+// Output: 1,2,3,4,5
+
