@@ -349,4 +349,9 @@ function copyButton_click(){
     navigator.clipboard.writeText(text);
 }
 
+// JS Quiz - 29
+// Play any Audio File using the play() method in JavaScript
+
+var audioFile  =new Audio('audioFile.mp3')
+audioFile.play()
 
