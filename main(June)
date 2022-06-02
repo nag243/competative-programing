@@ -1,15 +1,14 @@
-
 //JS Quiz - 1
 //Write a function that takes two numbers (a and b) as arrgument 
 //return b percent of a 
 
-function myFunction(a,b) {
+function myFunction(a, b) {
     return (a * b) / 100;
 }
 
 const a10 = myFunction(100, 50)
-const b10= myFunction(10, 1)
-const c10 = myFunction(500,25)
+const b10 = myFunction(10, 1)
+const c10 = myFunction(500, 25)
 
 console.log(a10, b10, c10)
-50 0.1 125
+    // 50 0.1 125

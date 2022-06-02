@@ -1,0 +1,30 @@
+/*  */
+
+
+/* How to place the last <div> on top of all the other <div>.? */
+
+
+/* 
+<div class = "first" ></div>
+<div class = "second" ></div>
+<div class = "third" ></div> */
+
+
+/* common method */
+
+.third {
+    position: absolute;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+}
+
+.last-child {
+    order: -1
+}
+
+.third {
+    display: flex;
+}
