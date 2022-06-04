@@ -12,3 +12,12 @@ const c10 = myFunction(500, 25)
 
 console.log(a10, b10, c10)
     // 50 0.1 125
+
+
+// JS Quiz - 2
+let text = "Hello World";
+let result = text.endsWith("World");
+
+
+console.log(result)
+    // true
