@@ -21,3 +21,14 @@ let result = text.endsWith("World");
 
 console.log(result)
     // true
+
+// JS Quiz - 3
+const users = [
+    { id: 1, name: "John" },
+    { id: 2, name: "Wick" },
+    { id: 3, name: "Kim" }
+]
+const user = users.find(user => user.name === "Kim");
+
+console.log(user)
+    // {id: 3, name: 'Kim'}
