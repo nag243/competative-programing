@@ -31,4 +31,22 @@ const users = [
 const user = users.find(user => user.name === "Kim");
 
 console.log(user)
-    // {id: 3, name: 'Kim'}
+
+
+// JS Quiz - 4
+// target /currenTarget
+// {id: 3, name: 'Kim'}
+
+// <ul>
+//     <li></li>
+//     <li></li>
+//     <li></li>
+//     <li></li>
+//     <li></li>
+//     <li></li>
+// </ul>
+
+document.querySelector('ul').addEventListener('click', function(e) {
+    console.log(e.target) //li or any one element clicked inside ul
+    console.log(e.currenTarget) //ul (always)
+})
