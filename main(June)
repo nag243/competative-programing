@@ -50,3 +50,9 @@ document.querySelector('ul').addEventListener('click', function(e) {
     console.log(e.target) //li or any one element clicked inside ul
     console.log(e.currenTarget) //ul (always)
 })
+
+// JS Quiz - 5
+// Get current time zone
+const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+console.log(timeZone)
