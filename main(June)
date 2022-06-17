@@ -66,3 +66,12 @@ a = a % 2;
 
 console.log(a)
     // 1
+
+
+// JS Quiz - 6
+// 𝗢𝗻𝗹𝗶𝗻𝗲 / 𝗼𝗳𝗳𝗹𝗶𝗻𝗲 𝘀𝘁𝗮𝘁𝘂𝘀 𝗼𝗳 𝘁𝗵𝗲 𝘂𝘀𝗲𝗿 
+if (navigator.onLine) {
+    console.log('online');
+} else {
+    console.log('offline')
+}
