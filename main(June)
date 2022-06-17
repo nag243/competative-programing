@@ -56,3 +56,13 @@ document.querySelector('ul').addEventListener('click', function(e) {
 const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
 console.log(timeZone)
+
+// JS Quiz - 5
+
+let a = 1;
+a++;
+a /= 2;
+a = a % 2;
+
+console.log(a)
+    // 1
