@@ -45,3 +45,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+/* CSS Quiz - 3 */
+
+
+/* Box reflection with CSS  */
+
+
+/* 𝗬𝗼𝘂 𝗰𝗮𝗻 𝗿𝗲𝗳𝗹𝗲𝗰𝘁 𝗶𝗺𝗮𝗴𝗲 𝘂𝘀𝗶𝗻𝗴 𝗖𝗦𝗦*/
+
+img {
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
