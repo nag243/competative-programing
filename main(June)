@@ -84,3 +84,14 @@ const [n, , ...restofArray] = [...arr1, ...arr2];
 
 console.log(...restofArray)
     // 3 4 5
+
+
+// JS Quiz - 8
+// Toggle a CSS class of an element using JavaScript
+
+// If the class already exists in the element's classlist,
+//  it is removed. Otherwise, it adds it to the classList 
+
+const element = document.querySelector('div');
+
+element.classList.toggle('ClassName');
