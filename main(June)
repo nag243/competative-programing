@@ -95,3 +95,29 @@ console.log(...restofArray)
 const element = document.querySelector('div');
 
 element.classList.toggle('ClassName');
+
+// JS Quiz - 9
+// every thing will goes to callstack(task queue) queue only,
+//  even the last promise.resolve will goes to micro task queue but
+//  due to settimeout() it again goes to callstack queue
+
+new Promise(() => {
+    setTimeout(() => {
+        console.log(10)
+    }, 0);
+})
+
+setTimeout(() => {
+    console.log(2);
+}, 8);
+
+setTimeout(() => {
+    console.log(1);
+}, -1000);
+
+Promise.resolve().then(() => {
+    setTimeout(() => {
+        console.log(4)
+    }, -999);
+});
+// Output: 10 1 4 2
