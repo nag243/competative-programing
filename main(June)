@@ -121,3 +121,18 @@ Promise.resolve().then(() => {
     }, -999);
 });
 // Output: 10 1 4 2
+
+// JS Quiz - 10
+
+const obj = {
+    foo: '1',
+    bar: {
+        baz: '2',
+        toJSON() {
+            return 'Hello'
+        }
+    }
+}
+
+JSON.stringify(obj)
+    // Output:'{"foo":"1","bar":"Hello"}'
