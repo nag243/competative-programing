@@ -123,7 +123,10 @@ Promise.resolve().then(() => {
 // Output: 10 1 4 2
 
 // JS Quiz - 10
-
+// when doing JSON.stringify(), if an object has a toJSON() method,
+//  the return value of this method will be used to serialize it instead of the default behavior
+// (this method also takes a key parameter)
+// In this example, the object at property bar has this method, so the return value 'Hello' is used
 const obj = {
     foo: '1',
     bar: {
@@ -136,3 +139,16 @@ const obj = {
 
 JSON.stringify(obj)
     // Output:'{"foo":"1","bar":"Hello"}'
+
+
+//  JS Quiz - 11
+
+const obj2 = { foo: 'bar', lorem: 'ipsum' }
+
+const res = Object.fromEntries(
+    Object.entries(obj2)
+    .map(([key, value]) => ([value, key]))
+)
+
+console.log(res)
+    // output: {bar: 'foo', ipsum: 'lorem'}
