@@ -58,3 +58,26 @@
 img {
     -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
 }
+
+
+/* CSS Quiz - 4 */
+
+
+/* By using display:table-cell we can center the child element
+ inside the parent divcenter vertically and horizantally. */
+
+
+/* text-align:ceter ; - Center child element Horizantly */
+
+
+/* vertical-align:center;  - Center child element Vertically  */
+
+.parent {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.child {
+    display: inline-block;
+}
