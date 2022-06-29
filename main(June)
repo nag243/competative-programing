@@ -152,3 +152,14 @@ const res = Object.fromEntries(
 
 console.log(res)
     // output: {bar: 'foo', ipsum: 'lorem'}
+
+// JS Quiz - 11
+
+// reaload() used to reload the current web page
+// By deafualt it reload from the catch but we can pass an optional boolean parameter to reload() to force teh browser to realod the page from the server
+
+// Reload Page from Browser Cache
+location.reload()
+
+// Reload Page from Server 
+location.reload(true)
