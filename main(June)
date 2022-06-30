@@ -153,7 +153,7 @@ const res = Object.fromEntries(
 console.log(res)
     // output: {bar: 'foo', ipsum: 'lorem'}
 
-// JS Quiz - 11
+// JS Quiz - 12
 
 // reaload() used to reload the current web page
 // By deafualt it reload from the catch but we can pass an optional boolean parameter to reload() to force teh browser to realod the page from the server
@@ -163,3 +163,17 @@ location.reload()
 
 // Reload Page from Server 
 location.reload(true)
+
+// JS Quiz - 13
+function getPersinInfo(one, two, three) {
+    console.log(one);
+    console.log(two);
+    console.log(three);
+}
+
+const person = 'Nag';
+const designation = 'Software Enginner';
+
+getPersinInfo `${person} is a ${designation}`;
+
+//Output: ['', ' is a ', '',]
