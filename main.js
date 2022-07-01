@@ -39,8 +39,8 @@ const num2 = (a, b, a) => {
 
 
 // JS Quiz -5
-const arr = [0, 1, 2, 3, 4, 5]
-const reverse = arr.reverse();
+const arr4 = [0, 1, 2, 3, 4, 5]
+const reverse = arr4.reverse();
 console.log(reverse)
 
 // Ouput
@@ -125,7 +125,7 @@ String + Boolean - > concatenation
 const obj = { 'Id': 'ABC123' };
 
 //while assigning arr to array of object[ ...obj] will through Typeerror due to obj is not iterable
-const arr = [...obj]
+const arr3 = [...obj]
 
 console.log(arr)
     //output
@@ -327,28 +327,28 @@ numbers.sort((a, b) => a - b)
     //JS quiz -3
     //Undefined because function doesn't returns anything 
     (function() {
-            var animal = ['cow', 'horse'];
-            animal.push('cat');
-            animal.push('dog'
-                rat ''
-                goat ');
-                console.log(animal.length);
-            })();
+        var animal = ['cow', 'horse'];
+        animal.push('cat');
+        animal.push('dog',
+            ' rat',
+            'goat');
+        console.log(animal.length);
+    })();
 
-        //Output 
-        Undefined
+//Output 
+Undefined
 
-        // Which varible end up being part of func's closure?
+// Which varible end up being part of func's closure?
 
-        var c = 10;
+var c = 10;
 
-        function foo(a) {
-            let b = 8;
-            const d = 10;
-            return function bar() {
-                return a + d + c;
-            }
-        }
-        const func = foo(7)
-            // output
-        a, d, c
+function foo(a) {
+    let b = 8;
+    const d = 10;
+    return function bar() {
+        return a + d + c;
+    }
+}
+const func = foo(7)
+    // output
+a, d, c
