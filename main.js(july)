@@ -1,7 +1,0 @@
-JS Quiz - 1
-What are the three phases of event propagation?
-Capturing > Target > Bubbling
-The event first goes down through the parent elements until
- it reaches the target element (capturing phase). 
- When the event reaches the target it triggers there (target phase),
-and then goes back up the chain (bubbling phase), calling handlers along the way.
