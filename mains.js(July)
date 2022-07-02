@@ -28,3 +28,17 @@ const three = [] || 0 || true;
 console.log(one, two, three)
 
 //Output:  {} '' []
+
+// JS Quiz - 3
+// 𝗧𝗵𝗲 𝗲𝗮𝘀𝗶𝗲𝘀𝘁 𝘄𝗮𝘆 𝘁𝗼 𝗰𝗼𝗻𝘃𝗲𝗿𝘁 𝗮𝗻 𝗮𝗿𝗿𝗮𝘆 𝘁𝗼 𝗮𝗻 𝗼𝗯𝗷𝗲𝗰𝘁 is using spread(...)operator
+const fruits = ['banana', 'apple', 'orange']
+
+const fruitsObject = {...fruits }
+
+console.log(fruitsObject)
+    // Output:
+    // {
+    //     "0": "banana",
+    //     "1": "apple",
+    //     "2": "orange"
+    // }
