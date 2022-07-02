@@ -5,3 +5,26 @@
 // it reaches the target element(capturing phase).
 // When the event reaches the target it triggers there(target phase),
 // and then goes back up the chain(bubbling phase), calling handlers along the way.
+
+// JS Quiz - 2
+
+//  {} "" []
+// Reason : OR (||) operator evaluates like below
+// If all conditions are true => true
+// If one of the conditions is true => true
+// If all conditions are false => false
+// and
+// null = false
+// false = false
+// Note :
+// OR operator don't check the entire statement if any one one value is true,
+//  it return immediately true with out checking next chain value,
+//  that's how worked with " const three "
+
+const one = false || {} || null;
+const two = null || false || ''
+const three = [] || 0 || true;
+
+console.log(one, two, three)
+
+//Output:  {} '' []
