@@ -50,3 +50,11 @@ function sum(num1, num2 = num1) {
 
 sum(10)
     //Output: 20
+
+// JS quiz - 5
+// Sum values fron an array using reduce 
+var numbers = [1, 2, 3, 4]
+var sum = numbers.reduce((x, y) => x + y);
+console.log(sum)
+
+// output: 10
