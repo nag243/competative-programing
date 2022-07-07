@@ -58,3 +58,13 @@ var sum = numbers.reduce((x, y) => x + y);
 console.log(sum)
 
 // output: 10
+
+// JS quiz - 6 (Spread operator )
+const userInfo = ['Nag', 25, 'earth'];
+
+function getUserInfo([name, , address]) {
+    console.log(name, address)
+}
+
+getUserInfo(userInfo)
+    // Output: Nag earth
