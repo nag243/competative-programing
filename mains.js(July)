@@ -89,7 +89,15 @@ function sayHi() {
 sayHi();
 // Oh no an error: Hello world
 
+// JS quiz - 8
 
+// Nornal Way 
+if (accesible) {
+    console.log('Its open!');
+}
+
+// Great way
+accesible && console.log('its open!')
 
 
 
