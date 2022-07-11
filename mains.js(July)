@@ -99,6 +99,18 @@ if (accesible) {
 // Great way
 accesible && console.log('its open!')
 
+// JS quiz - 9
+var a = '10CSS';
+var b = 'CSS10';
+
+console.log(parseInt(a));
+console.log(parseInt(b));
+
+// If first character is something which can be parsed (numbers)...
+// it continues and returns the number till it finds an character
+//  which cant be parsed....(which is variable a in the above question)
+// So in this question...the answer will be 10,NaN
+
 
 
 
