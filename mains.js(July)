@@ -111,10 +111,11 @@ console.log(parseInt(b));
 //  which cant be parsed....(which is variable a in the above question)
 // So in this question...the answer will be 10,NaN
 
+// JS quiz - 10
+if (/Android | webOS | iPhone | OperaMini)
 
 
 
 
 
-
-// ----------
+    // ----------
