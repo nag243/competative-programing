@@ -121,7 +121,16 @@ if (/Android | webOS | iPhone | OperaMini/i.test(navigator.userAgent)) {
     console.log("not mobile device")
 }
 
+// JS quiz - 11
+// DOM Trick
 
+// In JavaScript DOM, you can choose to only fire an event once. 
+// This means you can allow an event to only be triggered once on a specific element.
+const elem = document.querySelector('button');
+
+elem.addEventListener("click", () => {
+    console.log("Nageshwar Nag");
+}, { once: true })
 
 
 
