@@ -133,5 +133,29 @@ elem.addEventListener("click", () => {
 }, { once: true })
 
 
+// JS quiz - 12
+
+// 2nd returns an error output
+// Reason :
+// ✅In first , operator is like the (?.)chaining operator, here instead of causing an error ..
+// if there is a nullish reference(null or undefined),
+//  the expression short-circuits with a return value of undefined.
+//   So it returns undefined .
+// ❌In second , the object checks for the property and it’s nested properties ,
+//  and it simply produce error like can’t read properties of undefined
+
+let user = {};
+// console.log(user ? .name ? .status);
+
+// let user = {};
+console.log(user.name.status);
+
+
+
+
+
+
+
+
 
 // ----------
