@@ -156,6 +156,22 @@ console.log(null == undefined) //true
 console.log(null === undefined) //false 
 
 
+// JS Quiz - 14
+// Validation Trick in JS
+const isRequired = () => {
+    throw new Error("param is required")
+}
+
+const print = (value = isRequired()) => {
+    console.log(`${value}`);
+}
+
+print(2);
+// 2
+
+print() //Throw Error
+    // Uncaught Error: param is required
+
 
 
 
