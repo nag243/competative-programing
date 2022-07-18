@@ -173,6 +173,22 @@ print() //Throw Error
     // Uncaught Error: param is required
 
 
+// JS Quiz - 15
+const arr = [{}, 'a', null, undefined]
+
+arr.forEach(el => console.log(typeof el === 'object'))
+
+// Output: true ,false true ,false
+
+
+
+
+
+
+
+
+
+
 
 
 
