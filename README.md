@@ -378,7 +378,7 @@ doFoo.call(obj, obj.foo) // outside obj
 
 <!-- JS quiz - 23 -->
 
-Did you know the logic behind of console.log(0.1+0.2); ?
+Did you know the logic behind of console.log(0.1+0.2) ?
 
 Some Weird Concepts 😎
 
