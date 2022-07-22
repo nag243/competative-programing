@@ -217,6 +217,10 @@ console.log(user1) // {name: 'AK' ;values :  [1, 2]}
 
 console.log(user2) // {name: "new name" ;values:[1, 2, 3] }
 
+// JS Quiz - 19
+// If you want to have a smooth scrolling animation 
+
+const Top = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
 
 

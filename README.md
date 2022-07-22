@@ -431,7 +431,7 @@ let stepTwo = stepOne.reduce((a,b) => {
     return parseInt(a) + parseInt(b)
 })
 
-console.log(stepTwowo)
+console.log(stepTwo)
 Output: 10
 
 <!--  JS quiz - 27-->
