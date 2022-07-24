@@ -230,7 +230,22 @@ bark.animal = 'dog';
 'dog'
 //nothing just fine 
 
+// JS Quiz - 20
 
+Print 1 to 10 using setInterval function in Javascript
+
+function printNumbers(from, to) {
+ let current = from;
+ let timerId = setInterval(function() {
+  console.log(current);
+  if (current == to) {
+   clearInterval(timerId);
+  }
+  current++;
+ }, 1000);
+}
+printNumbers(1, 10);
+//output:1,2,3,4,5,6,7,8,9,10
 
 
 

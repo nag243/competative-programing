@@ -432,7 +432,7 @@ let stepTwo = stepOne.reduce((a,b) => {
 })
 
 console.log(stepTwo)
-Output: 10
+Output: 10 
 
 <!--  JS quiz - 27-->
 <!-- Did you know that you can pass the Number constructor as an argument directly to the array methods?
