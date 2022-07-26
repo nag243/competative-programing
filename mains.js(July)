@@ -258,6 +258,13 @@ check([1,2,3,4,5]);
 check([4,4,4]);
 //true
 
+//JS Quiz - 22
+//#JavaScript: fromCharCode() string method, explained
+//The fromCharCode() method in JavaScript returns a new string created from the specified sequence of UTF-16 codes. It takes in an unlimited number of parameters. Each parameter should be an integer between 0 and 65535 representing a Unicode character. Numbers greater than 65535 are truncated.
+//Syntax: String.fromCharCode(num1, num2, ..., numN);
+
+String.fromCharCode(72, 69, 76, 76, 79) // "HELLO"
+String.fromCharCode(80, 79, 83, 84) // "POST"
 
 
 
