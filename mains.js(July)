@@ -266,6 +266,13 @@ check([4,4,4]);
 String.fromCharCode(72, 69, 76, 76, 79) // "HELLO"
 String.fromCharCode(80, 79, 83, 84) // "POST"
 
+//JS Quiz - 23
+ localStorage.setItem(key, value);//save data to localStorage
+localStorage.getItem(key); // read data
+localStorage.removeItem(key) ; Removie Data;
+localStorage.clear(); Removie all data
+
+
 
 
 
