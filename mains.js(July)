@@ -272,6 +272,14 @@ localStorage.getItem(key); // read data
 localStorage.removeItem(key) ; Removie Data;
 localStorage.clear(); Removie all data
 
+//JS Quiz - 24
+function sum(a,b) {
+    return a+b;
+}
+
+console.log(sum(1,'2'))
+12
+
 
 
 
