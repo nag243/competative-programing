@@ -280,7 +280,18 @@ function sum(a,b) {
 console.log(sum(1,'2'))
 12
 
+//JS Quiz - 25
 
+let employee = {
+    company: 'DXC TECH'
+}
+
+let emp1 = Object.create(employee);
+
+delete emp1.company;
+
+console.log(emp1.company)
+//DXC TECH
 
 
 
