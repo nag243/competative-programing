@@ -293,6 +293,19 @@ delete emp1.company;
 console.log(emp1.company)
 //DXC TECH
 
+//JS Quiz - 26
+
+const obj = { value: 0 };
+
+const func = () => { obj.value = 0.7};
+
+(() => {
+    obj.value = 0.5
+}) (obj)
+func()
+console.log(obj.value)
+//0.7
+
 
 
 
