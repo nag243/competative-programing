@@ -306,6 +306,13 @@ func()
 console.log(obj.value)
 //0.7
 
+//JS Quiz - 27
+
+//Disable the right click
+document.addEventListener('contextmenu', (event) => {
+    event.preventDefault();
+});
+
 
 
 
